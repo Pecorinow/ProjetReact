@@ -1,0 +1,282 @@
+🏗️ PHASE 1 — Mise en place de l'environnement
+Back
+1.1 Initialiser le projet
+
+ ✔ Crée un dossier backend/ et initialise un projet Node.js @done(26-04-14 14:27)
+ ✔ Ajoute un fichier .gitignore — réfléchis à ce qu'il ne faut jamais committer @done(26-04-14 14:27)
+
+1.2 Installer les dépendances
+
+ ✔ Installe Express @done(26-04-14 14:27)
+ ✔ Installe Mongoose @done(26-04-17 12:21)
+ ✔ charger les variables d'env Node via package.json @done(26-04-14 14:32)
+ ✔ Ajoute le watch natif de Node pour le restart automatique @done(26-04-14 14:30)
+ ✔ Installe argon2 (hachage des mots de passe) @done(26-04-14 14:34)
+ ✔ Installe jsonwebtoken (gestion des tokens) @done(26-04-14 14:34)
+
+1.3 Structurer le projet
+
+ ✔ Crée les dossiers routes/, controllers/, models/, middleware/, config/ @done(26-04-14 14:27)
+ ✔ Crée le fichier principal  app.js @done(26-04-14 14:27)
+ ✔ Ajoute la connexion MongoDB dans app.js @done(26-04-17 18:04)
+
+1.4 Configurer l'environnement
+
+ ✔ Crée un fichier .env avec le port et l'URL MongoDB @done(26-04-17 18:15)
+ ✔ Teste que les variables d'environnement sont bien lues @done(26-04-21 14:09)
+
+1.5 Lancer le serveur
+
+ ✔ Configure une route test GET / qui retourne "Server is running" @done(26-04-17 18:37)
+ ✔ Vérifie que le serveur se relance bien à chaque modification @done(26-04-17 18:37)
+ ✔ Vérifie dans le terminal que la connexion MongoDB s'établit @done(26-04-21 14:09)
+
+
+Front
+1.6 Initialiser le projet React
+
+ ✔ Crée un dossier frontend/ et initialise un projet Vite + React @done(26-04-21 14:18)
+ ✔ Supprime les fichiers de démo inutiles (logo, App.css par défaut...) @done(26-04-21 14:23)
+ ✔ Ajoute un .gitignore @done(26-04-21 14:24)
+
+1.7 Structurer le projet
+
+ ✔ Crée les dossiers pages/, components/, services/, context/ @done(26-04-21 14:32)
+ ✔ Crée un fichier .env avec l'URL de l'API back (VITE_API_URL) @done(26-04-21 14:48)
+
+1.8 Vérifier que tout tourne
+
+ ✔ Lance le front et vérifie qu'il s'affiche sur localhost @done(26-04-21 14:58)
+ ✔ Fais un appel test vers GET / du back depuis le front — cela t'obligera à configurer CORS côté back @done(26-04-21 16:02)
+
+
+💡 CORS : cherche à quoi ça sert et comment l'activer dans Express. C'est une étape souvent oubliée qui bloque toutes les requêtes front → back.
+
+
+🌿 PHASE 2 — Les plantes
+Back
+2.1 Créer le modèle Plant
+
+ ✔ Crée models/Plant.js avec un schéma Mongoose @done(26-04-29 16:15)
+ ✔ Réfléchis aux types de chaque champ de ton JSON (String, Array, Number, Object...) @done(26-04-29 16:15)
+ ✔ Ajoute une validation sur les champs obligatoires @done(26-04-29 16:18)
+
+2.2 Importer les données
+
+ ☐ Crée un fichier seed.js à la racine du back
+ ☐ Écris un script qui vide la collection plants puis insère toutes les plantes de ton JSON
+ ☐ Lance le script et vérifie dans MongoDB Compass (ou Atlas) que les données sont bien là
+
+2.3 Route — toutes les plantes
+
+ ☐ Crée routes/plantRoutes.js
+ ☐ Crée controllers/plantController.js
+ ☐ Implémente GET /api/plants qui retourne toutes les plantes
+ ☐ Teste dans Insomnia
+
+2.4 Route — une plante par id
+
+ ☐ Implémente GET /api/plants/:id
+ ☐ Gère le cas où l'id n'existe pas (quel code HTTP renvoies-tu ?)
+ ☐ Teste dans Insomnia
+
+2.5 Route — filtres
+
+ ☐ Réfléchis à comment passer plusieurs filtres en query params (ex: /api/plants?categorie=mellifere&sol=calcaire)
+ ☐ Implémente la logique de filtrage dans le controller
+ ☐ Teste chaque filtre dans Insomnia : catégorie, sol, floraison, niveau de toxicité
+ ☐ Teste la combinaison de plusieurs filtres ensemble
+
+2.6 Route — associations d'une plante
+
+ ☐ Implémente GET /api/plants/:id/associations qui retourne les plantes associées
+ ☐ Teste dans Insomnia
+
+
+Front
+2.7 Créer le service
+
+ ☐ Crée services/plantService.js
+ ☐ Écris une fonction getAllPlants(filters) qui appelle ton API
+ ☐ Écris une fonction getPlantById(id)
+ ☐ Écris une fonction getPlantAssociations(id)
+
+2.8 Page liste des plantes
+
+ ☐ Crée pages/PlantsPage.jsx
+ ☐ Affiche toutes les plantes au chargement
+ ☐ Ajoute un état de chargement (loading spinner ou message)
+ ☐ Gère l'affichage en cas d'erreur API
+
+2.9 Filtres sur la liste
+
+ ☐ Ajoute les filtres par catégorie
+ ☐ Ajoute le filtre par sol
+ ☐ Ajoute le filtre par mois de floraison
+ ☐ Ajoute le filtre par niveau de toxicité
+ ☐ Vérifie que combiner plusieurs filtres fonctionne
+ ☐ Réfléchis à comment réinitialiser tous les filtres en un clic
+
+2.10 Page détail d'une plante
+
+ ☐ Crée pages/PlantDetailPage.jsx
+ ☐ Affiche toutes les infos de la plante
+ ☐ Affiche la liste des plantes associées (noms cliquables vers leur propre page détail)
+ ☐ Ajoute un bouton retour vers la liste
+
+2.11 Navigation
+
+ ☐ Installe React Router
+ ☐ Configure les routes /plants et /plants/:id
+ ☐ Vérifie que la navigation fonctionne dans les deux sens
+
+
+🔐 PHASE 3 — Authentification
+Back
+3.1 Créer le modèle User
+
+ ☐ Crée models/User.js
+ ☐ Champs à prévoir : email, password, nom, created_at
+ ☐ Ajoute une validation (email unique, password longueur minimale...)
+ ☐ Réfléchis : où hashe-t-on le mot de passe ? Dans le controller ou dans le modèle (middleware Mongoose pre save) ?
+
+3.2 Route Register
+
+ ☐ Crée routes/authRoutes.js et controllers/authController.js
+ ☐ Implémente POST /api/auth/register
+ ☐ Vérifie que l'email n'existe pas déjà avant de créer l'utilisateur
+ ☐ Hashe le mot de passe avant de sauvegarder
+ ☐ Retourne un token JWT à la création
+ ☐ Teste dans Insomnia — vérifie que le mot de passe stocké en base est bien hashé
+
+3.3 Route Login
+
+ ☐ Implémente POST /api/auth/login
+ ☐ Vérifie que l'email existe
+ ☐ Compare le mot de passe entré avec le hash en base (bcrypt)
+ ☐ Retourne un token JWT si OK, une erreur générique si non (pourquoi générique ?)
+ ☐ Teste dans Insomnia
+
+3.4 Middleware d'authentification
+
+ ☐ Crée middleware/protect.js
+ ☐ Le middleware lit le token dans le header Authorization
+ ☐ Il vérifie et décode le token
+ ☐ Il attache l'utilisateur à req.user
+ ☐ Il renvoie une 401 si le token est absent ou invalide
+ ☐ este en appelant une route protégée avec et sans token dans Insomnia
+
+
+Front
+3.5 Pages auth
+
+ ☐ Crée pages/RegisterPage.jsx avec un formulaire (nom, email, password)
+ ☐ Crée pages/LoginPage.jsx avec un formulaire (email, password)
+ ☐ Ajoute la validation côté front (champs vides, format email...)
+ ☐ Affiche les erreurs retournées par l'API
+
+3.6 Service auth
+
+ ☐ Crée services/authService.js
+ ☐ Écris les fonctions register(data) et login(data)
+ ☐ Gère le stockage du token après login/register — réfléchis au meilleur endroit
+
+3.7 Contexte d'authentification
+
+ ☐ Crée context/AuthContext.jsx
+ ☐ Expose : l'utilisateur courant, une fonction login, une fonction logout, un booléen isAuthenticated
+ ☐ Au chargement de l'app, vérifie si un token existe déjà et restaure la session
+ ☐ Enveloppe toute l'app avec ce contexte dans main.jsx
+
+3.8 Protection des routes front
+
+ ☐ Crée un composant PrivateRoute.jsx
+ ☐ Redirige vers /login si l'utilisateur n'est pas connecté
+ ☐ Applique-le aux routes qui nécessitent d'être connecté (les jardins)
+
+3.9 Navigation conditionnelle
+
+ ☐ Affiche "Connexion / Inscription" si non connecté
+ ☐ Affiche le nom de l'utilisateur + "Déconnexion" si connecté
+ ☐ Le bouton "Ajouter à un jardin" n'est visible que si connecté
+
+
+🌱 PHASE 4 — Les jardins
+Back
+4.1 Créer le modèle Garden
+
+ ☐ Crée models/Garden.js
+ ☐ Champs : nom, description, user_id (référence User), plantes (tableau de références Plant), created_at
+ ☐ Réfléchis à la validation nécessaire
+
+4.2 Routes CRUD jardins
+
+ ☐ Crée routes/gardenRoutes.js et controllers/gardenController.js
+ ☐ Applique le middleware protect à toutes ces routes
+    ☐ GET /api/gardens — retourne uniquement les jardins de l'utilisateur connecté
+    ☐ POST /api/gardens — crée un jardin lié à l'utilisateur connecté
+    ☐ PUT /api/gardens/:id — modifie un jardin (vérifie que l'utilisateur en est bien le propriétaire)
+    ☐ DELETE /api/gardens/:id — supprime un jardin (même vérification)
+ ☐ Teste chaque route dans Insomnia avec et sans token
+
+4.3 Routes gestion des plantes dans un jardin
+
+ ☐ POST /api/gardens/:id/plants — ajoute une plante (évite les doublons !)
+ ☐ DELETE /api/gardens/:id/plants/:plantId — retire une plante
+ ☐ Teste dans Insomnia
+
+
+Front
+4.4 Page liste des jardins
+
+ ☐ Crée pages/GardensPage.jsx
+ ☐ Affiche tous les jardins de l'utilisateur
+ ☐ Bouton "Créer un jardin"
+ ☐ Bouton "Supprimer" sur chaque jardin (avec confirmation)
+
+4.5 Création et édition d'un jardin
+
+ ☐ Crée un composant formulaire réutilisable pour créer et éditer
+ ☐ Réfléchis : un seul composant ou deux pages séparées ?
+
+4.6 Page détail d'un jardin
+
+ ☐ Crée pages/GardenDetailPage.jsx
+ ☐ Affiche le nom, la description, et la liste des plantes du jardin
+ ☐ Bouton "Retirer" sur chaque plante
+ ☐ Section "Plantes suggérées" — basée sur les associations des plantes déjà présentes
+☐ 
+4.7 Ajouter une plante à un jardin
+
+ ☐ Sur la page détail d'une plante, ajoute un bouton "Ajouter à un jardin"
+ ☐ Ce bouton ouvre une liste déroulante ou une modale avec les jardins de l'utilisateur
+ ☐ Après ajout, affiche un retour visuel (succès ou erreur)
+☐ 
+4.8 Service jardins
+
+ ☐ Crée services/gardenService.js avec toutes les fonctions nécessaires
+ ☐ N'oublie pas d'envoyer le token dans les headers de chaque requête — réfléchis à comment centraliser ça plutôt que de le répéter partout
+
+
+✨ PHASE 5 — Finitions
+5.1 Gestion des erreurs
+
+ ☐ Crée un middleware d'erreur global côté back
+ ☐ Vérifie que tous tes controllers retournent les bons codes HTTP
+ ☐ Côté front, crée un composant ErrorMessage réutilisable
+
+5.2 Validation des données back
+
+ ☐ Valide les données entrantes sur les routes auth et jardins
+ ☐ Retourne des messages d'erreur clairs et exploitables par le front
+
+5.3 Suggestions de plantes
+
+ ☐ Algorithme : récupère toutes les associations des plantes d'un jardin, déduplique, retire celles déjà présentes
+ ☐ Affiche les suggestions sur la page détail du jardin
+
+5.4 Expérience utilisateur
+
+ ☐ Ajoute des états de chargement partout où il y a un appel API
+ ☐ Vérifie que l'app est utilisable sur mobile
+ ☐ Vérifie les cas limites : jardin vide, aucune plante trouvée avec ces filtres, etc.

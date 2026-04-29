@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env app.js",
+    "dev": "node --watch --env-file=.env app.js"
+  },
+  "author": "Caroline Poveda",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1"
+  }
+}

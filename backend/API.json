@@ -1,0 +1,2741 @@
+[
+  {
+    "id": "achillea-millefolium",
+    "nom_commun": "Achillée millefeuille",
+    "nom_latin": "Achillea millefolium",
+    "categories": [
+      "fleur",
+      "medicinale",
+      "mellifere"
+    ],
+    "description": "Vivace robuste aux fleurs blanches ou rosées en corymbes. Très mellifère et aux nombreuses vertus médicinales.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      80
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "sableux",
+      "calcaire"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Peut provoquer des dermatites de contact chez les personnes sensibles. Déconseillée aux femmes enceintes en usage interne prolongé."
+    },
+    "associations": [
+      "lavande-vraie",
+      "thym-commun",
+      "sauge-officinale",
+      "centauree-bleue",
+      "millepertuis-perfore",
+      "bourrache-officinale",
+      "camomille-romaine"
+    ]
+  },
+  {
+    "id": "lavande-vraie",
+    "nom_commun": "Lavande vraie",
+    "nom_latin": "Lavandula angustifolia",
+    "categories": [
+      "aromatique",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Arbrisseau aromatique aux épis bleu-violet très mellifères et au parfum reconnaissable.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      60
+    ],
+    "sol": [
+      "calcaire",
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "tres_sec"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Huile essentielle toxique à forte dose par voie interne. Peut provoquer des réactions allergiques cutanées chez certaines personnes."
+    },
+    "associations": [
+      "achillea-millefolium",
+      "thym-commun",
+      "sauge-officinale",
+      "romarin-officinal",
+      "centauree-bleue",
+      "origan-commun",
+      "camomille-romaine"
+    ]
+  },
+  {
+    "id": "thym-commun",
+    "nom_commun": "Thym commun",
+    "nom_latin": "Thymus vulgaris",
+    "categories": [
+      "aromatique",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Petit sous-arbrisseau très aromatique aux petites fleurs lilas adorées des abeilles.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      15,
+      40
+    ],
+    "sol": [
+      "calcaire",
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "tres_sec"
+    ],
+    "floraison": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Plante culinaire sûre. L'huile essentielle est irritante pour les muqueuses à forte concentration. Déconseillée en grande quantité aux femmes enceintes."
+    },
+    "associations": [
+      "lavande-vraie",
+      "sauge-officinale",
+      "romarin-officinal",
+      "origan-commun",
+      "achillea-millefolium",
+      "centauree-bleue",
+      "camomille-romaine"
+    ]
+  },
+  {
+    "id": "sauge-officinale",
+    "nom_commun": "Sauge officinale",
+    "nom_latin": "Salvia officinalis",
+    "categories": [
+      "aromatique",
+      "medicinale",
+      "mellifere"
+    ],
+    "description": "Arbrisseau aux feuilles grisâtres et aux fleurs violettes très attractives pour les pollinisateurs.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      70
+    ],
+    "sol": [
+      "calcaire",
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Contient de la thuyone, neurotoxique à haute dose. Déconseillée aux femmes enceintes et allaitantes, aux épileptiques. Ne pas consommer en grandes quantités sur de longues périodes."
+    },
+    "associations": [
+      "lavande-vraie",
+      "thym-commun",
+      "romarin-officinal",
+      "achillea-millefolium",
+      "origan-commun",
+      "centauree-bleue",
+      "bourrache-officinale"
+    ]
+  },
+  {
+    "id": "romarin-officinal",
+    "nom_commun": "Romarin officinal",
+    "nom_latin": "Salvia rosmarinus",
+    "categories": [
+      "aromatique",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Arbrisseau méditerranéen très aromatique aux fleurs bleues très mellifères.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      50,
+      150
+    ],
+    "sol": [
+      "calcaire",
+      "sableux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "tres_sec"
+    ],
+    "floraison": [
+      "mars",
+      "avril",
+      "mai"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Peut provoquer des convulsions à très forte dose. L'huile essentielle est contre-indiquée chez la femme enceinte et les épileptiques. Usage culinaire modéré sans danger."
+    },
+    "associations": [
+      "lavande-vraie",
+      "thym-commun",
+      "sauge-officinale",
+      "origan-commun",
+      "centauree-bleue",
+      "achillea-millefolium"
+    ]
+  },
+  {
+    "id": "origan-commun",
+    "nom_commun": "Origan commun",
+    "nom_latin": "Origanum vulgare",
+    "categories": [
+      "aromatique",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Vivace aromatique aux fleurs roses très mellifères, excellent pour attirer les papillons.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      60
+    ],
+    "sol": [
+      "calcaire",
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Plante culinaire sûre. L'huile essentielle concentrée peut être irritante pour la peau. Sans danger en usage alimentaire normal."
+    },
+    "associations": [
+      "lavande-vraie",
+      "thym-commun",
+      "sauge-officinale",
+      "romarin-officinal",
+      "achillea-millefolium",
+      "millepertuis-perfore",
+      "camomille-romaine"
+    ]
+  },
+  {
+    "id": "millepertuis-perfore",
+    "nom_commun": "Millepertuis perforé",
+    "nom_latin": "Hypericum perforatum",
+    "categories": [
+      "medicinale",
+      "mellifere",
+      "fleur"
+    ],
+    "description": "Vivace aux fleurs jaune vif très mellifères, célèbre pour ses propriétés contre la dépression légère.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      70
+    ],
+    "sol": [
+      "calcaire",
+      "limoneux",
+      "sableux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Photosensibilisant à forte dose. Interactions médicamenteuses importantes (anticoagulants, contraceptifs, antidépresseurs). Ne pas associer à d'autres traitements sans avis médical."
+    },
+    "associations": [
+      "achillea-millefolium",
+      "origan-commun",
+      "camomille-romaine",
+      "valériane-officinale",
+      "centauree-bleue"
+    ]
+  },
+  {
+    "id": "valériane-officinale",
+    "nom_commun": "Valériane officinale",
+    "nom_latin": "Valeriana officinalis",
+    "categories": [
+      "medicinale",
+      "mellifere",
+      "fleur"
+    ],
+    "description": "Grande vivace aux fleurs roses ou blanches parfumées, reconnue pour ses vertus sédatives.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      80,
+      150
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "ombre"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Peut provoquer somnolence et vertiges à haute dose. Déconseillée avec des sédatifs ou avant de conduire. Eviter chez la femme enceinte."
+    },
+    "associations": [
+      "millepertuis-perfore",
+      "reine-des-pres",
+      "sureau-noir",
+      "fougere-male",
+      "lierre-terrestre",
+      "lysimaque-commune",
+      "angélique-des-bois"
+    ]
+  },
+  {
+    "id": "camomille-romaine",
+    "nom_commun": "Camomille romaine",
+    "nom_latin": "Chamaemelum nobile",
+    "categories": [
+      "medicinale",
+      "aromatique",
+      "mellifere"
+    ],
+    "description": "Vivace tapissante aux fleurs blanches odorantes, apaisante et mellifère.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      10,
+      30
+    ],
+    "sol": [
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Peut provoquer des réactions allergiques chez les personnes sensibles aux Astéracées. Déconseillée en usage interne prolongé pendant la grossesse."
+    },
+    "associations": [
+      "millepertuis-perfore",
+      "thym-commun",
+      "achillea-millefolium",
+      "centauree-bleue",
+      "origan-commun",
+      "lavande-vraie"
+    ]
+  },
+  {
+    "id": "centauree-bleue",
+    "nom_commun": "Centaurée bleuet",
+    "nom_latin": "Centaurea cyanus",
+    "categories": [
+      "fleur",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Annuelle aux fleurs bleues emblématiques, très mellifère et bienfaisante pour les yeux.",
+    "cycle": "annuelle",
+    "hauteur_cm": [
+      30,
+      80
+    ],
+    "sol": [
+      "calcaire",
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Plante sans toxicité connue aux doses normales. Très rarement allergisante."
+    },
+    "associations": [
+      "coquelicot",
+      "achillea-millefolium",
+      "lavande-vraie",
+      "thym-commun",
+      "millepertuis-perfore",
+      "camomille-romaine",
+      "bourrache-officinale"
+    ]
+  },
+  {
+    "id": "coquelicot",
+    "nom_commun": "Coquelicot",
+    "nom_latin": "Papaver rhoeas",
+    "categories": [
+      "fleur",
+      "mellifere"
+    ],
+    "description": "Annuelle aux fleurs rouge écarlate emblématiques des champs, très attractive pour les abeilles solitaires.",
+    "cycle": "annuelle",
+    "hauteur_cm": [
+      30,
+      80
+    ],
+    "sol": [
+      "calcaire",
+      "limoneux",
+      "sableux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Contient de faibles quantités d'alcaloïdes. Légèrement toxique en grande quantité, surtout les graines. Peut provoquer somnolence légère."
+    },
+    "associations": [
+      "centauree-bleue",
+      "achillea-millefolium",
+      "camomille-romaine",
+      "reine-des-pres",
+      "bourrache-officinale"
+    ]
+  },
+  {
+    "id": "reine-des-pres",
+    "nom_commun": "Reine des prés",
+    "nom_latin": "Filipendula ulmaria",
+    "categories": [
+      "fleur",
+      "medicinale",
+      "mellifere"
+    ],
+    "description": "Grande vivace des zones humides aux fleurs blanches crémeuses très odorantes, précurseur de l'aspirine.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      80,
+      150
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "humide",
+      "tres_humide"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "octobre",
+      "novembre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Déconseillée aux personnes allergiques à l'aspirine (salicylates). À éviter en cas de troubles de la coagulation ou avant une intervention chirurgicale."
+    },
+    "associations": [
+      "valériane-officinale",
+      "sureau-noir",
+      "fougere-male",
+      "lierre-terrestre",
+      "lysimaque-commune",
+      "angélique-des-bois",
+      "menthe-aquatique",
+      "iris-des-marais"
+    ]
+  },
+  {
+    "id": "lysimaque-commune",
+    "nom_commun": "Lysimaque commune",
+    "nom_latin": "Lysimachia vulgaris",
+    "categories": [
+      "fleur",
+      "mellifere"
+    ],
+    "description": "Vivace des zones humides aux fleurs jaunes dorées regroupées en grappes.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      60,
+      120
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "humide",
+      "tres_humide"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "octobre",
+      "novembre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Légèrement toxique par ingestion en grande quantité. Peut provoquer des irritations gastro-intestinales. Non documentée comme dangereuse en usage externe."
+    },
+    "associations": [
+      "reine-des-pres",
+      "valériane-officinale",
+      "sureau-noir",
+      "fougere-male",
+      "iris-des-marais",
+      "menthe-aquatique",
+      "salicaire-commune"
+    ]
+  },
+  {
+    "id": "bourrache-officinale",
+    "nom_commun": "Bourrache officinale",
+    "nom_latin": "Borago officinalis",
+    "categories": [
+      "fleur",
+      "mellifere",
+      "medicinale",
+      "aromatique"
+    ],
+    "description": "Annuelle aux fleurs bleu étoilé, exceptionnellement mellifère et comestible.",
+    "cycle": "annuelle",
+    "hauteur_cm": [
+      30,
+      60
+    ],
+    "sol": [
+      "sableux",
+      "limoneux",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "moyen"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "avril",
+      "mai"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Contient de faibles quantités d'alcaloïdes pyrrolizidiniques potentiellement hépatotoxiques en usage interne prolongé. Les fleurs consommées occasionnellement sont sans danger."
+    },
+    "associations": [
+      "centauree-bleue",
+      "coquelicot",
+      "achillea-millefolium",
+      "camomille-romaine",
+      "thym-commun",
+      "sauge-officinale"
+    ]
+  },
+  {
+    "id": "lierre-terrestre",
+    "nom_commun": "Lierre terrestre",
+    "nom_latin": "Glechoma hederacea",
+    "categories": [
+      "medicinale",
+      "aromatique",
+      "mellifere"
+    ],
+    "description": "Vivace tapissante aux petites fleurs lilas, plante médicinale des sous-bois humides.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      5,
+      20
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "ombre"
+    ],
+    "humidite": [
+      "moyen",
+      "humide"
+    ],
+    "floraison": [
+      "mars",
+      "avril",
+      "mai"
+    ],
+    "plantation": [
+      "septembre",
+      "octobre",
+      "mars",
+      "avril"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Toxique pour les chevaux et le bétail en grande quantité. En usage humain aux doses normales, sans danger particulier. Déconseillée pendant la grossesse."
+    },
+    "associations": [
+      "valériane-officinale",
+      "fougere-male",
+      "polypode-commun",
+      "reine-des-pres",
+      "sureau-noir",
+      "angélique-des-bois"
+    ]
+  },
+  {
+    "id": "angélique-des-bois",
+    "nom_commun": "Angélique des bois",
+    "nom_latin": "Angelica sylvestris",
+    "categories": [
+      "medicinale",
+      "mellifere",
+      "fleur"
+    ],
+    "description": "Grande ombellifère des zones humides aux fleurs blanches en larges ombelles, très appréciée des insectes.",
+    "cycle": "bisannuelle",
+    "hauteur_cm": [
+      100,
+      200
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "aout",
+      "septembre"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Photosensibilisante : la sève peut provoquer de graves brûlures cutanées au contact du soleil (phototoxicité). Peut être confondue avec des ombellifères toxiques (ciguë). Manipulation avec précaution."
+    },
+    "associations": [
+      "valériane-officinale",
+      "reine-des-pres",
+      "lierre-terrestre",
+      "lysimaque-commune",
+      "sureau-noir",
+      "iris-des-marais"
+    ]
+  },
+  {
+    "id": "fougere-male",
+    "nom_commun": "Fougère mâle",
+    "nom_latin": "Dryopteris filix-mas",
+    "categories": [
+      "sans_fleur"
+    ],
+    "description": "Grande fougère caduque des sous-bois, très décorative et structurante dans les zones ombragées.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      60,
+      120
+    ],
+    "sol": [
+      "humifere",
+      "argileux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "ombre",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [],
+    "plantation": [
+      "mars",
+      "avril",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Toxique pour les ruminants, chevaux et chiens par ingestion des frondes. Contient des phloroglucinols et de la thiaminase. Peut provoquer des troubles neurologiques chez l'animal."
+    },
+    "associations": [
+      "lierre-terrestre",
+      "polypode-commun",
+      "valériane-officinale",
+      "reine-des-pres",
+      "lysimaque-commune",
+      "sureau-noir",
+      "hetre-commun",
+      "blechnum-en-epi"
+    ]
+  },
+  {
+    "id": "polypode-commun",
+    "nom_commun": "Polypode commun",
+    "nom_latin": "Polypodium vulgare",
+    "categories": [
+      "sans_fleur",
+      "medicinale"
+    ],
+    "description": "Petite fougère persistante poussant sur les vieux murs, rochers et troncs d'arbres.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      15,
+      40
+    ],
+    "sol": [
+      "sableux",
+      "rocailleux",
+      "humifere"
+    ],
+    "lumiere": [
+      "ombre",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Non toxique à doses normales. La consommation excessive de rhizomes peut provoquer des nausées. Usage médicinal traditionnel sans danger apparent."
+    },
+    "associations": [
+      "fougere-male",
+      "lierre-terrestre",
+      "mousse-tourbe",
+      "blechnum-en-epi",
+      "hetre-commun"
+    ]
+  },
+  {
+    "id": "blechnum-en-epi",
+    "nom_commun": "Blechnum en épi",
+    "nom_latin": "Blechnum spicant",
+    "categories": [
+      "sans_fleur"
+    ],
+    "description": "Fougère persistante caractéristique des sols acides, avec deux types de frondes distinctes.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      20,
+      50
+    ],
+    "sol": [
+      "acide",
+      "humifere",
+      "sableux"
+    ],
+    "lumiere": [
+      "ombre",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Aucune toxicité connue pour l'homme ou les animaux domestiques aux doses normales."
+    },
+    "associations": [
+      "fougere-male",
+      "polypode-commun",
+      "mousse-tourbe",
+      "bruyere-commune",
+      "bourdaine"
+    ]
+  },
+  {
+    "id": "mousse-tourbe",
+    "nom_commun": "Mousse de tourbe",
+    "nom_latin": "Sphagnum sp.",
+    "categories": [
+      "sans_fleur"
+    ],
+    "description": "Mousse formant des coussins spongieux en milieu humide acide, excellente pour retenir l'eau.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      5,
+      30
+    ],
+    "sol": [
+      "acide",
+      "tourbeux"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "ombre"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide"
+    ],
+    "floraison": [],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Utilisée historiquement comme pansement naturel pour ses propriétés antiseptiques."
+    },
+    "associations": [
+      "blechnum-en-epi",
+      "polypode-commun",
+      "fougere-male",
+      "bruyere-commune"
+    ]
+  },
+  {
+    "id": "prele-des-champs",
+    "nom_commun": "Prêle des champs",
+    "nom_latin": "Equisetum arvense",
+    "categories": [
+      "sans_fleur",
+      "medicinale"
+    ],
+    "description": "Plante primitive sans fleurs aux tiges articulées siliceuses, reminéralisante et utile en jardin.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      20,
+      60
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "sableux",
+      "acide"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [],
+    "plantation": [
+      "mars",
+      "avril"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Contient de la thiaminase (détruisant la vitamine B1) : toxique pour les chevaux et bovins en quantité. La cuisson détruit cet enzyme. Déconseillée en usage interne prolongé chez l'humain."
+    },
+    "associations": [
+      "fougere-male",
+      "blechnum-en-epi",
+      "reine-des-pres",
+      "valériane-officinale",
+      "iris-des-marais"
+    ]
+  },
+  {
+    "id": "bruyere-commune",
+    "nom_commun": "Bruyère commune",
+    "nom_latin": "Calluna vulgaris",
+    "categories": [
+      "arbuste",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Arbuste nain des landes acides aux fleurs roses ou mauves très mellifères en fin d'été.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      20,
+      60
+    ],
+    "sol": [
+      "acide",
+      "sableux",
+      "tourbeux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "aout",
+      "septembre",
+      "octobre"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux. Utilisée sans danger en phytothérapie pour les voies urinaires."
+    },
+    "associations": [
+      "blechnum-en-epi",
+      "mousse-tourbe",
+      "genêt-a-balais",
+      "bourdaine",
+      "polypode-commun"
+    ]
+  },
+  {
+    "id": "genêt-a-balais",
+    "nom_commun": "Genêt à balais",
+    "nom_latin": "Cytisus scoparius",
+    "categories": [
+      "arbuste",
+      "mellifere"
+    ],
+    "description": "Arbuste aux tiges vertes caractéristiques et aux fleurs jaune vif très mellifères.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      80,
+      200
+    ],
+    "sol": [
+      "acide",
+      "sableux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "octobre",
+      "novembre",
+      "mars",
+      "avril"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Toxique en grande quantité : contient de la spartéine et des alcaloïdes quinolizidiniques. Effets cardiotoxiques possibles. Déconseillé aux femmes enceintes et aux personnes souffrant de problèmes cardiaques."
+    },
+    "associations": [
+      "bruyere-commune",
+      "bourdaine",
+      "prunellier",
+      "achillea-millefolium",
+      "centauree-bleue"
+    ]
+  },
+  {
+    "id": "prunellier",
+    "nom_commun": "Prunellier",
+    "nom_latin": "Prunus spinosa",
+    "categories": [
+      "arbuste",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Arbuste épineux aux fleurs blanches précoces et aux prunelles bleu-noir, remarquable pour la faune.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      100,
+      300
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "calcaire"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "mars",
+      "avril"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Les noyaux contiennent de l'amygdaline (précurseur de cyanure). Les fruits mûrs consommés en quantité raisonnable sont sans danger. Ne pas croquer les noyaux."
+    },
+    "associations": [
+      "sureau-noir",
+      "bourdaine",
+      "genêt-a-balais",
+      "cornouillers-sanguin",
+      "viorne-lantane",
+      "eglantier",
+      "noisetier-commun"
+    ]
+  },
+  {
+    "id": "sureau-noir",
+    "nom_commun": "Sureau noir",
+    "nom_latin": "Sambucus nigra",
+    "categories": [
+      "arbuste",
+      "medicinale",
+      "mellifere"
+    ],
+    "description": "Grand arbuste aux corymbes de fleurs blanches parfumées et aux baies noires, très utile pour la faune.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      200,
+      600
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "moyen",
+      "humide"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Les baies crues, l'écorce et les feuilles sont toxiques (sambunigrine). Nausées, vomissements, troubles digestifs. Les baies cuites et les fleurs sont comestibles et sans danger."
+    },
+    "associations": [
+      "prunellier",
+      "valériane-officinale",
+      "reine-des-pres",
+      "fougere-male",
+      "cornouillers-sanguin",
+      "viorne-lantane",
+      "lierre-terrestre"
+    ]
+  },
+  {
+    "id": "bourdaine",
+    "nom_commun": "Bourdaine",
+    "nom_latin": "Frangula alnus",
+    "categories": [
+      "arbuste",
+      "medicinale"
+    ],
+    "description": "Arbuste des sols acides et humides aux petites fleurs blanches et aux baies colorées, plante hôte du Citron.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      100,
+      500
+    ],
+    "sol": [
+      "acide",
+      "humifere",
+      "limoneux"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "L'écorce fraîche est purgative et émétique violente (glucosides anthracéniques). L'écorce séchée au moins 1 an est utilisée médicinalement comme laxatif doux. Baies toxiques à éviter."
+    },
+    "associations": [
+      "bruyere-commune",
+      "genêt-a-balais",
+      "prunellier",
+      "fougere-male",
+      "blechnum-en-epi",
+      "noisetier-commun"
+    ]
+  },
+  {
+    "id": "cornouillers-sanguin",
+    "nom_commun": "Cornouiller sanguin",
+    "nom_latin": "Cornus sanguinea",
+    "categories": [
+      "arbuste",
+      "mellifere"
+    ],
+    "description": "Arbuste aux tiges rouge vif en hiver, fleurs blanches et baies noires, très favorable à la faune.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      150,
+      400
+    ],
+    "sol": [
+      "calcaire",
+      "argileux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "moyen",
+      "sec"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Les baies sont légèrement toxiques pour l'homme (troubles digestifs) mais comestibles pour les oiseaux. L'ingestion en grande quantité peut provoquer nausées et vomissements."
+    },
+    "associations": [
+      "prunellier",
+      "sureau-noir",
+      "viorne-lantane",
+      "noisetier-commun",
+      "eglantier",
+      "viorne-obier"
+    ]
+  },
+  {
+    "id": "viorne-lantane",
+    "nom_commun": "Viorne lantane",
+    "nom_latin": "Viburnum lantana",
+    "categories": [
+      "arbuste",
+      "mellifere"
+    ],
+    "description": "Arbuste calcicole aux fleurs blanches odorantes et aux baies rouges puis noires, très décoratif.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      150,
+      400
+    ],
+    "sol": [
+      "calcaire",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Les baies sont toxiques : contiennent des substances irritantes provoquant vomissements, diarrhées, troubles cardiaques à haute dose. Déconseillé aux enfants."
+    },
+    "associations": [
+      "cornouillers-sanguin",
+      "prunellier",
+      "sureau-noir",
+      "eglantier",
+      "noisetier-commun",
+      "viorne-obier"
+    ]
+  },
+  {
+    "id": "viorne-obier",
+    "nom_commun": "Viorne obier",
+    "nom_latin": "Viburnum opulus",
+    "categories": [
+      "arbuste",
+      "mellifere",
+      "medicinale"
+    ],
+    "description": "Arbuste des zones humides aux fleurs blanches stériles en bordure et aux baies rouge éclatant très décoratives.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      150,
+      400
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Les baies crues sont toxiques (viopudial) : nausées, vomissements, crampes. Écorce utilisée médicinalement contre les crampes utérines. Déconseillé sans préparation adaptée."
+    },
+    "associations": [
+      "cornouillers-sanguin",
+      "viorne-lantane",
+      "sureau-noir",
+      "reine-des-pres",
+      "iris-des-marais",
+      "salicaire-commune"
+    ]
+  },
+  {
+    "id": "eglantier",
+    "nom_commun": "Églantier",
+    "nom_latin": "Rosa canina",
+    "categories": [
+      "arbuste",
+      "medicinale",
+      "mellifere"
+    ],
+    "description": "Rosier sauvage épineux aux fleurs roses simples et aux cynorhodons rouges riches en vitamine C.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      100,
+      300
+    ],
+    "sol": [
+      "calcaire",
+      "limoneux",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "sec",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Les poils irritants à l'intérieur des cynorhodons peuvent irriter les muqueuses s'ils sont ingérés directement. Les fruits préparés sont comestibles et nutritifs."
+    },
+    "associations": [
+      "cornouillers-sanguin",
+      "viorne-lantane",
+      "prunellier",
+      "noisetier-commun",
+      "sureau-noir",
+      "achillea-millefolium"
+    ]
+  },
+  {
+    "id": "noisetier-commun",
+    "nom_commun": "Noisetier commun",
+    "nom_latin": "Corylus avellana",
+    "categories": [
+      "arbre",
+      "mellifere"
+    ],
+    "description": "Petit arbre ou grand arbuste aux chatons précoces, fournissant pollen tôt en saison et noisettes pour la faune.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      200,
+      500
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere",
+      "calcaire"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "moyen"
+    ],
+    "floraison": [
+      "janvier",
+      "fevrier",
+      "mars"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Les noisettes peuvent provoquer de graves réactions allergiques chez les personnes allergiques aux fruits à coque."
+    },
+    "associations": [
+      "cornouillers-sanguin",
+      "viorne-lantane",
+      "eglantier",
+      "sureau-noir",
+      "hetre-commun",
+      "bourdaine",
+      "prunellier"
+    ]
+  },
+  {
+    "id": "hetre-commun",
+    "nom_commun": "Hêtre commun",
+    "nom_latin": "Fagus sylvatica",
+    "categories": [
+      "arbre"
+    ],
+    "description": "Grand arbre majestueux au feuillage caduc brillant, formant de belles futaies et abritant une biodiversité remarquable.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      1500,
+      4000
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere",
+      "calcaire"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "moyen"
+    ],
+    "floraison": [
+      "avril",
+      "mai"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Les faînes crues sont légèrement toxiques en grande quantité (fagin, acide oxalique). La torréfaction les rend comestibles. Peuvent provoquer des troubles digestifs si consommées en excès."
+    },
+    "associations": [
+      "fougere-male",
+      "polypode-commun",
+      "lierre-terrestre",
+      "noisetier-commun",
+      "chene-pedoncule",
+      "blechnum-en-epi"
+    ]
+  },
+  {
+    "id": "chene-pedoncule",
+    "nom_commun": "Chêne pédonculé",
+    "nom_latin": "Quercus robur",
+    "categories": [
+      "arbre",
+      "mellifere"
+    ],
+    "description": "Arbre emblématique de longévité extrême, abritant plus de 500 espèces d'insectes et produisant glands et tanins.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      2000,
+      5000
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "moyen",
+      "humide"
+    ],
+    "floraison": [
+      "avril",
+      "mai"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Les glands contiennent des tanins toxiques pour les ruminants et les équidés (néphrotoxicité). Toxiques aussi pour les chiens. En usage humain, les glands doivent être lessivés avant consommation."
+    },
+    "associations": [
+      "fougere-male",
+      "polypode-commun",
+      "lierre-terrestre",
+      "noisetier-commun",
+      "hetre-commun",
+      "bourdaine",
+      "sureau-noir"
+    ]
+  },
+  {
+    "id": "aulne-glutineux",
+    "nom_commun": "Aulne glutineux",
+    "nom_latin": "Alnus glutinosa",
+    "categories": [
+      "arbre",
+      "mellifere"
+    ],
+    "description": "Arbre des berges et zones humides enrichissant le sol en azote, indispensable aux écosystèmes rivulaires.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      1000,
+      2500
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide"
+    ],
+    "floraison": [
+      "fevrier",
+      "mars",
+      "avril"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux. Écorce utilisée en teinture et tannage."
+    },
+    "associations": [
+      "reine-des-pres",
+      "iris-des-marais",
+      "salicaire-commune",
+      "lysimaque-commune",
+      "viorne-obier",
+      "saule-blanc",
+      "menthe-aquatique"
+    ]
+  },
+  {
+    "id": "saule-blanc",
+    "nom_commun": "Saule blanc",
+    "nom_latin": "Salix alba",
+    "categories": [
+      "arbre",
+      "medicinale",
+      "mellifere"
+    ],
+    "description": "Grand arbre des rives aux feuilles argentées et aux chatons mellifères très précoces, source naturelle d'aspirine.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      1000,
+      2500
+    ],
+    "sol": [
+      "argileux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide"
+    ],
+    "floraison": [
+      "mars",
+      "avril",
+      "mai"
+    ],
+    "plantation": [
+      "novembre",
+      "decembre",
+      "fevrier",
+      "mars"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Contient des salicylates : déconseillé aux personnes allergiques à l'aspirine. À éviter avant une intervention chirurgicale et avec des anticoagulants."
+    },
+    "associations": [
+      "aulne-glutineux",
+      "iris-des-marais",
+      "reine-des-pres",
+      "salicaire-commune",
+      "lysimaque-commune",
+      "menthe-aquatique"
+    ]
+  },
+  {
+    "id": "iris-des-marais",
+    "nom_commun": "Iris des marais",
+    "nom_latin": "Iris pseudacorus",
+    "categories": [
+      "fleur",
+      "plante_berge"
+    ],
+    "description": "Vivace spectaculaire aux grandes fleurs jaune vif, typique des bords de cours d'eau et zones humides.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      60,
+      120
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "vase"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide",
+      "aquatique_emergent"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Toutes les parties sont toxiques : contient des iridoïdes irritants. Provoque vomissements, diarrhées, irritations cutanées. Sève irritante pour les yeux. Toxique pour les animaux d'élevage."
+    },
+    "associations": [
+      "reine-des-pres",
+      "lysimaque-commune",
+      "salicaire-commune",
+      "aulne-glutineux",
+      "saule-blanc",
+      "menthe-aquatique",
+      "angélique-des-bois",
+      "viorne-obier"
+    ]
+  },
+  {
+    "id": "salicaire-commune",
+    "nom_commun": "Salicaire commune",
+    "nom_latin": "Lythrum salicaria",
+    "categories": [
+      "fleur",
+      "medicinale",
+      "mellifere",
+      "plante_berge"
+    ],
+    "description": "Vivace des berges aux magnifiques épis de fleurs rose magenta, très mellifère et médicinale.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      60,
+      150
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide"
+    ],
+    "floraison": [
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique, utilisée sans danger en phytothérapie pour ses propriétés astringentes et anti-diarrhéiques."
+    },
+    "associations": [
+      "iris-des-marais",
+      "reine-des-pres",
+      "lysimaque-commune",
+      "aulne-glutineux",
+      "saule-blanc",
+      "menthe-aquatique",
+      "angélique-des-bois",
+      "viorne-obier"
+    ]
+  },
+  {
+    "id": "menthe-aquatique",
+    "nom_commun": "Menthe aquatique",
+    "nom_latin": "Mentha aquatica",
+    "categories": [
+      "aromatique",
+      "medicinale",
+      "mellifere",
+      "plante_berge"
+    ],
+    "description": "Vivace très aromatique des zones humides aux fleurs lilas en pompons, très mellifère.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      80
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "vase"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide",
+      "aquatique_emergent"
+    ],
+    "floraison": [
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "mai",
+      "septembre"
+    ],
+    "toxicite": {
+      "niveau": "faible",
+      "details": "Non toxique en usage culinaire normal. L'huile essentielle est toxique à forte dose et contre-indiquée chez les jeunes enfants et les femmes enceintes. Ne pas appliquer sur le visage des nourrissons."
+    },
+    "associations": [
+      "salicaire-commune",
+      "iris-des-marais",
+      "reine-des-pres",
+      "lysimaque-commune",
+      "aulne-glutineux",
+      "saule-blanc",
+      "cresson-des-pres"
+    ]
+  },
+  {
+    "id": "cresson-des-pres",
+    "nom_commun": "Cresson des prés",
+    "nom_latin": "Cardamine pratensis",
+    "categories": [
+      "fleur",
+      "mellifere",
+      "plante_berge"
+    ],
+    "description": "Vivace printanière aux jolies fleurs lilas, typique des prairies humides et berges, plante hôte du Piéride.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      20,
+      50
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "humide",
+      "tres_humide"
+    ],
+    "floraison": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique, comestible. Goût légèrement piquant. Aucune contre-indication connue aux doses alimentaires normales."
+    },
+    "associations": [
+      "menthe-aquatique",
+      "reine-des-pres",
+      "salicaire-commune",
+      "lysimaque-commune",
+      "iris-des-marais"
+    ]
+  },
+  {
+    "id": "typha-latifolia",
+    "nom_commun": "Massette à larges feuilles",
+    "nom_latin": "Typha latifolia",
+    "categories": [
+      "plante_aquatique",
+      "plante_berge"
+    ],
+    "description": "Plante aquatique émergente emblématique aux longs épis brun chocolat, formant des roselières denses.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      100,
+      250
+    ],
+    "sol": [
+      "vase",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "tres_humide"
+    ],
+    "floraison": [
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique, comestible : pollen, jeunes pousses et rhizomes utilisés en cuisine. Aucune toxicité connue."
+    },
+    "associations": [
+      "roseau-commun",
+      "jonc-epars",
+      "scirpe-lacustre",
+      "iris-des-marais",
+      "sagittaire-commune"
+    ]
+  },
+  {
+    "id": "roseau-commun",
+    "nom_commun": "Roseau commun",
+    "nom_latin": "Phragmites australis",
+    "categories": [
+      "plante_aquatique",
+      "plante_berge"
+    ],
+    "description": "Grande graminée aquatique formant des phragmitaies denses, habitat précieux pour de nombreuses espèces d'oiseaux.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      150,
+      400
+    ],
+    "sol": [
+      "vase",
+      "argileux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "tres_humide"
+    ],
+    "floraison": [
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Les jeunes pousses sont comestibles. Plante sans danger pour les animaux et les humains."
+    },
+    "associations": [
+      "typha-latifolia",
+      "jonc-epars",
+      "scirpe-lacustre",
+      "iris-des-marais",
+      "menthe-aquatique"
+    ]
+  },
+  {
+    "id": "jonc-epars",
+    "nom_commun": "Jonc épars",
+    "nom_latin": "Juncus effusus",
+    "categories": [
+      "plante_aquatique",
+      "plante_berge"
+    ],
+    "description": "Vivace aux tiges vert brillant cylindriques formant de belles touffes en milieu humide.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      50,
+      100
+    ],
+    "sol": [
+      "argileux",
+      "tourbeux",
+      "vase"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "tres_humide",
+      "humide"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "mai",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux."
+    },
+    "associations": [
+      "typha-latifolia",
+      "roseau-commun",
+      "scirpe-lacustre",
+      "iris-des-marais",
+      "menthe-aquatique",
+      "mousse-tourbe"
+    ]
+  },
+  {
+    "id": "scirpe-lacustre",
+    "nom_commun": "Scirpe lacustre",
+    "nom_latin": "Schoenoplectus lacustris",
+    "categories": [
+      "plante_aquatique"
+    ],
+    "description": "Grande plante aquatique aux tiges rondes vert foncé, structurante dans les étangs et les berges.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      100,
+      300
+    ],
+    "sol": [
+      "vase",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Les rhizomes sont comestibles pour certains animaux sauvages."
+    },
+    "associations": [
+      "typha-latifolia",
+      "roseau-commun",
+      "jonc-epars",
+      "nénuphar-jaune",
+      "sagittaire-commune"
+    ]
+  },
+  {
+    "id": "nénuphar-jaune",
+    "nom_commun": "Nénuphar jaune",
+    "nom_latin": "Nuphar lutea",
+    "categories": [
+      "plante_aquatique",
+      "fleur"
+    ],
+    "description": "Plante aquatique flottante aux grandes feuilles ovales et aux fleurs jaune d'or, colonisant les eaux calmes.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      10,
+      30
+    ],
+    "sol": [
+      "vase",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Toutes les parties sont toxiques : alcaloïdes nupharine et déoxynupharine. Peut provoquer nausées, vomissements et troubles cardiaques. Toxique pour les animaux d'élevage."
+    },
+    "associations": [
+      "nénuphar-blanc",
+      "scirpe-lacustre",
+      "sagittaire-commune",
+      "renoncule-aquatique",
+      "cornifle-submergé"
+    ]
+  },
+  {
+    "id": "nénuphar-blanc",
+    "nom_commun": "Nénuphar blanc",
+    "nom_latin": "Nymphaea alba",
+    "categories": [
+      "plante_aquatique",
+      "fleur"
+    ],
+    "description": "Emblématique plante aquatique aux grandes fleurs blanches immaculées et au feuillage flottant.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      5,
+      20
+    ],
+    "sol": [
+      "vase",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Le rhizome contient des alcaloïdes toxiques (nymphaïne). Peut provoquer des troubles neurologiques et digestifs. Utilisé autrefois comme anaphrodisiaque. À éviter sans préparation médicinale adaptée."
+    },
+    "associations": [
+      "nénuphar-jaune",
+      "scirpe-lacustre",
+      "sagittaire-commune",
+      "renoncule-aquatique",
+      "cornifle-submergé"
+    ]
+  },
+  {
+    "id": "sagittaire-commune",
+    "nom_commun": "Sagittaire commune",
+    "nom_latin": "Sagittaria sagittifolia",
+    "categories": [
+      "plante_aquatique",
+      "fleur"
+    ],
+    "description": "Plante aquatique aux feuilles en forme de flèche et aux fleurs blanches à cœur violacé, très ornementale.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      90
+    ],
+    "sol": [
+      "vase",
+      "argileux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Les tubercules sont comestibles une fois cuits, consommés comme légume en Asie."
+    },
+    "associations": [
+      "nénuphar-jaune",
+      "nénuphar-blanc",
+      "scirpe-lacustre",
+      "typha-latifolia",
+      "renoncule-aquatique"
+    ]
+  },
+  {
+    "id": "renoncule-aquatique",
+    "nom_commun": "Renoncule aquatique",
+    "nom_latin": "Ranunculus aquatilis",
+    "categories": [
+      "plante_aquatique",
+      "fleur"
+    ],
+    "description": "Plante submergée aux délicates fleurs blanches émergentes, formant des tapis sous-marins oxygénants.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      5,
+      30
+    ],
+    "sol": [
+      "vase",
+      "graviers",
+      "sableux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "avril",
+      "mai"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Contient de la ranunculine (protoanémonine) : irritant pour les muqueuses et la peau à l'état frais. Toxique par ingestion en quantité. La dessiccation détruit l'agent toxique."
+    },
+    "associations": [
+      "nénuphar-jaune",
+      "nénuphar-blanc",
+      "sagittaire-commune",
+      "cornifle-submergé",
+      "myriophylle-en-epi"
+    ]
+  },
+  {
+    "id": "cornifle-submergé",
+    "nom_commun": "Cornifle submergé",
+    "nom_latin": "Ceratophyllum demersum",
+    "categories": [
+      "plante_aquatique",
+      "sans_fleur"
+    ],
+    "description": "Plante entièrement submergée sans racines, excellente oxygénante et refuge pour les alevins.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      100
+    ],
+    "sol": [
+      "vase",
+      "sableux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_immerse"
+    ],
+    "floraison": [],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux. Plante d'aquarium parfois utilisée."
+    },
+    "associations": [
+      "nénuphar-jaune",
+      "nénuphar-blanc",
+      "renoncule-aquatique",
+      "myriophylle-en-epi",
+      "potamot-nageant"
+    ]
+  },
+  {
+    "id": "myriophylle-en-epi",
+    "nom_commun": "Myriophylle en épi",
+    "nom_latin": "Myriophyllum spicatum",
+    "categories": [
+      "plante_aquatique"
+    ],
+    "description": "Plante submergée aux feuilles finement découpées en plumes, excellente oxygénante et abri pour la faune aquatique.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      20,
+      200
+    ],
+    "sol": [
+      "vase",
+      "sableux",
+      "calcaire"
+    ],
+    "lumiere": [
+      "plein_soleil"
+    ],
+    "humidite": [
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux aquatiques."
+    },
+    "associations": [
+      "cornifle-submergé",
+      "renoncule-aquatique",
+      "potamot-nageant",
+      "nénuphar-jaune"
+    ]
+  },
+  {
+    "id": "potamot-nageant",
+    "nom_commun": "Potamot nageant",
+    "nom_latin": "Potamogeton natans",
+    "categories": [
+      "plante_aquatique"
+    ],
+    "description": "Plante aquatique aux feuilles flottantes ovales et aux épis émergents, très utile pour ombrer l'eau et limiter les algues.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      10,
+      20
+    ],
+    "sol": [
+      "vase",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "juin",
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "juin"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux. Importante source alimentaire pour de nombreux oiseaux aquatiques."
+    },
+    "associations": [
+      "cornifle-submergé",
+      "myriophylle-en-epi",
+      "renoncule-aquatique",
+      "nénuphar-jaune",
+      "nénuphar-blanc"
+    ]
+  },
+  {
+    "id": "carex-des-rives",
+    "nom_commun": "Carex des rives",
+    "nom_latin": "Carex riparia",
+    "categories": [
+      "plante_berge",
+      "sans_fleur"
+    ],
+    "description": "Grande laîche des berges formant de belles touffes, excellente pour stabiliser les talus humides.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      60,
+      120
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "vase"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "tres_humide",
+      "humide",
+      "aquatique_emergent"
+    ],
+    "floraison": [
+      "mai",
+      "juin"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "septembre",
+      "octobre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique pour l'homme et les animaux."
+    },
+    "associations": [
+      "iris-des-marais",
+      "lysimaque-commune",
+      "jonc-epars",
+      "menthe-aquatique",
+      "reine-des-pres",
+      "aulne-glutineux"
+    ]
+  },
+  {
+    "id": "grande-consoude",
+    "nom_commun": "Grande consoude",
+    "nom_latin": "Symphytum officinale",
+    "categories": [
+      "medicinale",
+      "mellifere",
+      "plante_berge"
+    ],
+    "description": "Vivace des berges humides aux fleurs tubulaires rose-violet, mellifère et réputée pour cicatriser les blessures.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      50,
+      120
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "humifere"
+    ],
+    "lumiere": [
+      "mi_ombre",
+      "plein_soleil"
+    ],
+    "humidite": [
+      "humide",
+      "moyen"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "mars",
+      "avril",
+      "octobre",
+      "novembre"
+    ],
+    "toxicite": {
+      "niveau": "modere",
+      "details": "Contient des alcaloïdes pyrrolizidiniques hépatotoxiques. Usage interne déconseillé voire interdit dans plusieurs pays. Usage externe sur peau saine sans danger, limité dans le temps."
+    },
+    "associations": [
+      "reine-des-pres",
+      "valériane-officinale",
+      "salicaire-commune",
+      "lysimaque-commune",
+      "angélique-des-bois",
+      "menthe-aquatique"
+    ]
+  },
+  {
+    "id": "berle-dressee",
+    "nom_commun": "Berle dressée",
+    "nom_latin": "Berula erecta",
+    "categories": [
+      "plante_berge",
+      "plante_aquatique"
+    ],
+    "description": "Plante aquatique aux feuilles pennées et aux ombelles blanches, colonisant les ruisseaux et mares peu profondes.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      30,
+      80
+    ],
+    "sol": [
+      "vase",
+      "argileux",
+      "limoneux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "tres_humide"
+    ],
+    "floraison": [
+      "juillet",
+      "aout"
+    ],
+    "plantation": [
+      "avril",
+      "mai"
+    ],
+    "toxicite": {
+      "niveau": "eleve",
+      "details": "Peut être confondue avec la grande ciguë aquatique (Cicuta virosa), l'une des plantes les plus toxiques d'Europe. La ciguë aquatique contient de la cicutoxine, mortelle même en petite quantité. Manipulation et identification avec extrême prudence."
+    },
+    "associations": [
+      "menthe-aquatique",
+      "cresson-des-pres",
+      "iris-des-marais",
+      "carex-des-rives",
+      "jonc-epars"
+    ]
+  },
+  {
+    "id": "glycerie-flottante",
+    "nom_commun": "Glycérie flottante",
+    "nom_latin": "Glyceria fluitans",
+    "categories": [
+      "plante_aquatique",
+      "plante_berge"
+    ],
+    "description": "Graminée aquatique aux feuilles flottantes formant des radeaux, importante pour la faune aquatique.",
+    "cycle": "vivace",
+    "hauteur_cm": [
+      60,
+      120
+    ],
+    "sol": [
+      "vase",
+      "argileux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "aquatique_emergent",
+      "aquatique_immerse"
+    ],
+    "floraison": [
+      "mai",
+      "juin",
+      "juillet"
+    ],
+    "plantation": [
+      "avril",
+      "mai"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Les graines étaient autrefois consommées comme céréale (manne de Pologne)."
+    },
+    "associations": [
+      "roseau-commun",
+      "typha-latifolia",
+      "carex-des-rives",
+      "jonc-epars",
+      "renoncule-aquatique"
+    ]
+  },
+  {
+    "id": "cirse-des-marais",
+    "nom_commun": "Cirse des marais",
+    "nom_latin": "Cirsium palustre",
+    "categories": [
+      "fleur",
+      "mellifere",
+      "plante_berge"
+    ],
+    "description": "Chardon des zones humides aux fleurs rose-pourpre très appréciées des papillons et bourdons.",
+    "cycle": "bisannuelle",
+    "hauteur_cm": [
+      60,
+      180
+    ],
+    "sol": [
+      "argileux",
+      "limoneux",
+      "tourbeux"
+    ],
+    "lumiere": [
+      "plein_soleil",
+      "mi_ombre"
+    ],
+    "humidite": [
+      "humide",
+      "tres_humide"
+    ],
+    "floraison": [
+      "juillet",
+      "aout",
+      "septembre"
+    ],
+    "plantation": [
+      "avril",
+      "mai",
+      "aout",
+      "septembre"
+    ],
+    "toxicite": {
+      "niveau": "non_toxique",
+      "details": "Non toxique. Jeunes pousses comestibles après élimination des épines."
+    },
+    "associations": [
+      "reine-des-pres",
+      "lysimaque-commune",
+      "valériane-officinale",
+      "salicaire-commune",
+      "angélique-des-bois",
+      "cresson-des-pres"
+    ]
+  }
+]
