@@ -7,7 +7,7 @@ const server = express(); //création du serveur express, peut aussi être appel
 //? Récupération des variables d'environnement :
 const {PORT, DB_CONNEXION} = process.env;
 
-//? Pour paramètrer le fait que notre API doit comprendre que du JSON arrive :
+//? Pour paramètrer le fait que l'API doit comprendre que du JSON arrive :
 server.use(express.json());
 
 //------- Utilisation du middleware cors :
@@ -28,7 +28,7 @@ const mongoose = require('mongoose');
 server.use(async (req, res, next) => {
     try { 
         await mongoose.connect(DB_CONNEXION, { dbName: 'GardenManager' });
-        console.log('Connecté à la DB ! U da best 🫶'); // Si la connexion fonctionne, la route de index.js devrait aussi renvoyer son message sur localhost:3000 !
+        console.log('Connecté à la DB ! U da best 🫶'); // Si la connexion fonctionne, la route de index.js devrait aussi renvoyer son message sur localhost:3000/api !
         next();
     } catch(err) {
         console.log(`Connexion échouée : ${err}`);

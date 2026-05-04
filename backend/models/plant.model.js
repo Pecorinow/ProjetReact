@@ -3,6 +3,12 @@ const { Schema, model, Types } = require('mongoose'); // Importer Mongoose pour 
 //* 1) Créer un nouveau schema pour décrire à quoi ressemble une plante :
 const plantSchema = new Schema(
     {
+        slug : {
+            type : String,
+            required : true,
+            unique : true,
+            trim: true
+        },
         nom_commun : {
             type : String,
             required : true,
@@ -20,6 +26,7 @@ const plantSchema = new Schema(
         image : String,
 
         categories : [String],
+            // = type : tableau de strings. Peut aussi s'écrire : categories : { type : [Strings]}
 
         description : {
             type: String,

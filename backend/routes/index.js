@@ -1,5 +1,7 @@
 // Point d'entrée de toutes les routes :
 
+const plantRouter = require('./plant.router');
+
 // ! 1) Créer un objet "routeur" (router) 
 const router = require('express').Router();
 
@@ -7,6 +9,8 @@ const router = require('express').Router();
 router.get('/', (req, res) => {
     res.send('Bienvenue sur mon API', 200);
 });
+
+router.use('/plants', plantRouter);
 
 //! 3) Rendre l'objet router exportable :
 module.exports = router;

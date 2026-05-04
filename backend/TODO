@@ -63,22 +63,22 @@ Back
 
 2.2 Importer les données
 
- ☐ Crée un fichier seed.js à la racine du back
- ☐ Écris un script qui vide la collection plants puis insère toutes les plantes de ton JSON
- ☐ Lance le script et vérifie dans MongoDB Compass (ou Atlas) que les données sont bien là
+ ✔ Crée un fichier seed.js à la racine du back @done(26-04-30 15:18)
+ ✔ Écris un script qui vide la collection plants puis insère toutes les plantes de ton JSON @done(26-05-04 16:17)
+ ✔ Lance le script et vérifie dans MongoDB Compass (ou Atlas) que les données sont bien là @done(26-05-04 16:17)
 
 2.3 Route — toutes les plantes
 
- ☐ Crée routes/plantRoutes.js
- ☐ Crée controllers/plantController.js
- ☐ Implémente GET /api/plants qui retourne toutes les plantes
- ☐ Teste dans Insomnia
+ ✔ Crée routes/plantRoutes.js @done(26-05-04 16:29)
+ ✔ Crée controllers/plantController.js @done(26-05-04 16:29)
+ ✔ Implémente GET /api/plants qui retourne toutes les plantes @done(26-05-04 16:52)
+ ✔ Teste dans Insomnia @done(26-05-04 16:52)
 
 2.4 Route — une plante par id
 
- ☐ Implémente GET /api/plants/:id
- ☐ Gère le cas où l'id n'existe pas (quel code HTTP renvoies-tu ?)
- ☐ Teste dans Insomnia
+ ✔ Implémente GET /api/plants/:id @done(26-05-04 18:11)
+ ✔ Gère le cas où l'id n'existe pas (quel code HTTP renvoies-tu ?) @done(26-05-04 18:11)
+ ✔ Teste dans Insomnia @done(26-05-04 18:11)
 
 2.5 Route — filtres
 
@@ -164,7 +164,7 @@ Back
  ☐ Il vérifie et décode le token
  ☐ Il attache l'utilisateur à req.user
  ☐ Il renvoie une 401 si le token est absent ou invalide
- ☐ este en appelant une route protégée avec et sans token dans Insomnia
+ ☐ Teste en appelant une route protégée avec et sans token dans Insomnia
 
 
 Front
