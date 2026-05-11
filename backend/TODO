@@ -82,15 +82,15 @@ Back
 
 2.5 Route — filtres
 
- ☐ Réfléchis à comment passer plusieurs filtres en query params (ex: /api/plants?categorie=mellifere&sol=calcaire)
- ☐ Implémente la logique de filtrage dans le controller
- ☐ Teste chaque filtre dans Insomnia : catégorie, sol, floraison, niveau de toxicité
- ☐ Teste la combinaison de plusieurs filtres ensemble
+ ✔ Réfléchis à comment passer plusieurs filtres en query params (ex: /api/plants?categorie=mellifere&sol=calcaire) @done(26-05-06 17:00)
+ ✔ Implémente la logique de filtrage dans le controller @done(26-05-11 15:25)
+ ✔ Teste chaque filtre dans Insomnia : catégorie, sol, floraison, niveau de toxicité @done(26-05-11 17:16)
+ ✔ Teste la combinaison de plusieurs filtres ensemble @done(26-05-11 17:16)
 
 2.6 Route — associations d'une plante
 
- ☐ Implémente GET /api/plants/:id/associations qui retourne les plantes associées
- ☐ Teste dans Insomnia
+ ✔ Implémente GET /api/plants/:id/associations qui retourne les plantes associées @done(26-05-11 20:09)
+ ✔ Teste dans Insomnia @done(26-05-11 20:09)
 
 
 Front
