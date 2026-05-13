@@ -96,17 +96,17 @@ Back
 Front
 2.7 Créer le service
 
- ☐ Crée services/plantService.js
- ☐ Écris une fonction getAllPlants(filters) qui appelle ton API
- ☐ Écris une fonction getPlantById(id)
- ☐ Écris une fonction getPlantAssociations(id)
+ ✔ Crée services/plantService.js @done(26-05-12 15:41)
+ ✔ Écris une fonction getAllPlants(filters) qui appelle ton API @done(26-05-12 15:41)
+ ✔ Écris une fonction getPlantById(id) @done(26-05-12 15:41)
+ ✔ Écris une fonction getPlantAssociations(id) @done(26-05-12 15:50)
 
 2.8 Page liste des plantes
 
- ☐ Crée pages/PlantsPage.jsx
- ☐ Affiche toutes les plantes au chargement
+ ✔ Crée pages/PlantsPage.jsx @done(26-05-13 13:42)
+ ✔ Affiche toutes les plantes au chargement @done(26-05-13 13:42)
  ☐ Ajoute un état de chargement (loading spinner ou message)
- ☐ Gère l'affichage en cas d'erreur API
+ ✔ Gère l'affichage en cas d'erreur API @done(26-05-13 13:56)
 
 2.9 Filtres sur la liste
 

@@ -78,6 +78,9 @@ const plantService = {
                                                 nom_commun : 1,
                                                 nom_latin : 1}
                                              })
+                                             // À quoi sert populate() ?
+                                             // .populate() sert ajouter manuellement des informations d'un autre model associé, parce qu'en No-SQL les différentes entités ne sont pas naturellement liées entre elles comme en SQL.
+                                             // => Dans ce cas-ci, à chaque fois qu'on va cherche une plante, .populate va permettre d'y insérer les infos choisies ici dans le champ "associations" (et pas juste les ObjectId des plantes associées).
             return searchedPlant;
         }
         catch(err){
@@ -85,22 +88,6 @@ const plantService = {
             throw new Error(err);
         }
     },
-
-    // findAssociationsById : async(id) => {
-    //     try {
-    //         const searchedPlant = await Plant.findById(id);
-
-
-
-    //         return searchedPlant;
-    //     }
-    //     catch(err){
-    //         console.log(err);
-    //         throw new Error(err);
-    //     }
-
-    // }
-
 }
 
 module.exports = plantService;
