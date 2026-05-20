@@ -19,7 +19,7 @@ export const Explore = () => {
 
     useEffect( () => {
         // Restauration des valeurs par défaut :
-            // (surtout utile si on n'avait pas un tableau vide [] au bout du useEffect, et qu'il faudrait rétablir les valeurs de base après chaque déclenchement du useEffect)
+            // (surtout utile si on n'avait pas un tableau vide [] au bout du useEffect, et qu'il fallait rétablir les valeurs de base après chaque déclenchement du useEffect)
         setIsLoading(true);
         setPlants(null);
         setError(null);
@@ -39,6 +39,7 @@ export const Explore = () => {
             });
     }, [filters]); // => À chaque fois que l'état de filters va changer, le useEffect se réenclenche et va rechercher de nouvelles data dans l'API.
 
+
     return (
         <>
 
@@ -53,8 +54,8 @@ export const Explore = () => {
             </div>
 
             <FiltersPanel
-                isFOpen= {isFiltersOpen}
                 onClose={() => setIsFiltersOpen(false)}
+                isFOpen= {isFiltersOpen}
                 onSetFilters = {setFilters}
             />
 

@@ -5,23 +5,27 @@ const plantService = {
     find : async(query) => {
 
         try {
+            //* Tableau de champs filtrables :
+             // (sauf toxicite et associations qui fonctionnent différemment et viendront après)
             const filtrableFields = ['categories', 'sol', 'lumiere', 'humidite', 'floraison', 'plantation', 'cycle'];
             
             let filter = {};
             
-            // Pour chaque champ de filtrable fields :
+            //* Pour chaque champ de filtrable fields :
             for (const field of filtrableFields) {
 
-                if(query[field] !== undefined) { // Si la propriété correspondant à field dans la query n'est PAS undefined = Si le champs a été coché :
+                // Si la propriété correspondant à field dans la query n'est PAS undefined = Si le champs a été coché :
+                if(query[field] !== undefined) { 
                     // Si Express voit plusieurs paramètres avec le même nom (ex : categories=aromatique&categories=mellifere), il les met automatiquement dans un tableau ; s'il ne voit qu'un seul param avec ce nom, il en fait une string ("aromatique")
-                    // Si query[field] est un tableau = Si il y a plusieurs cases cochées dans un des champs (ex : plusieurs catégories) :
+                    //* Si query[field] est un tableau = Si il y a plusieurs cases cochées dans un des champs (ex : plusieurs catégories) :
                     if (Array.isArray(query[field])) {
                         // Ajouter à l'objet filter la propriété contenue dans field, si cette propriété correspond au contenu de field dans l'objet query :
                         filter[field] = {$all : query[field]}
                             // revient à faire filter.categories = { $in: query.categories }
                             // [field] est entre crochets car la variale field est ici utilisée comme une clé dynamique : si on l'écrit sans, il est interprété comme un objet litéral 'field'.
                     }
-                    // Si par contre query[field] n'est pas un tableau mais une string (= une seule case cochée pour ce champ), alors il faut le transformer manuellement en tableau, car $all ne peut chercher que dans un tableau => query[field] devient [query[field]] :
+                    //* Si par contre query[field] n'est pas un tableau mais une string (= une seule case cochée pour ce champ) :
+                    // alors il faut le transformer manuellement en tableau, car $all ne peut chercher que dans un tableau => query[field] devient [query[field]] :
                     else {
                         filter[field] = {$all : [query[field]]}
                     }
@@ -34,6 +38,8 @@ const plantService = {
             };       
             // let categoryFilter = {categories : {$all : categories}};
 
+            //* Filtre par toxicité :
+            // Si toxicite.niveau n'est pas undefined = Si un niveau de toxicité a été coché :
             if (query['toxicite.niveau'] !== undefined) { 
                 filter['toxicite.niveau'] = query['toxicite.niveau']
                     // Ici, pas de $all, car on ne cherche pas une valeur parmi d'autres dans un tableau (categories, sol...) mais bien une correspondance directe : 
@@ -41,6 +47,7 @@ const plantService = {
                         // query['toxicite.niveau'] = "cherche exactement cette valeur dans la query".
             };
 
+            //* Filtre par typing dans la barre de recherche :
             if (query.search !== undefined) {
                 filter.$or = [
                     {nom_commun : { $regex: query.search, $options: "i" }},
@@ -58,6 +65,8 @@ const plantService = {
                                                 nom_commun : 1,
                                                 nom_latin : 1}
                                              })
+                                             //* On ajoute le filtre "associations" dans le populate() !
+
                                     //   .and(categoryFilter);
             return plants;
 

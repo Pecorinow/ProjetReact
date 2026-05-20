@@ -1,0 +1,129 @@
+// import { useState, useEffect } from "react";
+
+// export const FiltersPanel = ({isFOpen, onClose, onSetFilters}) => {
+//     // Attention, dans les parenthèses () on passe un OBJET props => sans les accolades {}, isFOpen vaudra l'objet props entier, et onClose et onSetFilters seront undefined !
+
+//     const [isOptionsOpen, setIsOptionsOpen] = useState(false);
+
+//     useEffect(() => {
+//         if (isFOpen) {
+//             document.body.style.overflow = "hidden";
+//         } else {
+//             document.body.style.overflow = ""
+//         }
+
+//         return () => {
+//             document.body.style.overflow = ""
+//         }
+//     }, [isFOpen]);
+
+//     // State pour sauvegarder le champ sélectionné :
+//     const [selectedField, setSelectedField] = useState(null);
+//         // null acr, par défaut, au chargement de la page, aucun champ n'ets sélectionné.
+    
+//     // Mise à jour du state selectedField pour conditionner l'ouverture du panneau OptionsPanel au clic sur le composant :
+//     const handleFieldClick = (field) => {
+//         // = Au clic, la valeur du state = field.
+
+//         // Sauvegarde du champ sélectionné :
+//         setSelectedField(field);
+//     }
+
+
+//     return (
+//         <div className={isFOpen ? "" : ""}>
+//             <button
+//             type="button"
+//             aria-label="Fermer le panneau des filtres"
+//             onClick={onClose}>
+//                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+//             </button>
+
+//             <ul>
+//                 {selectedField ?
+//                 <OptionsPanel field={selectedField}/> :
+                
+//                 // Liste des champs
+                
+                
+
+
+//                 }
+
+//                 {/* <li>
+//                     <button
+//                     type="button"
+//                     >
+//                         <p>Catégorie</p>
+//                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                    
+//                 </li>
+
+//                 <li>
+//                     <button>
+//                         <p>Cycle</p>
+//                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                    
+//                 </li>
+
+//                 <li>
+//                     <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg></button>
+//                     <p>Type de sol</p>
+                    
+//                 </li>
+
+//                 <li>
+//                     <button>
+//                          <p>Lumière</p>
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                   
+//                 </li>
+
+//                 <li>
+//                     <button>
+//                         <p>Type de sol</p>
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                    
+//                 </li>
+
+//                 <li>
+//                     <button>
+//                         <p>Degré d'humidité</p>
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                    
+//                 </li>
+
+//                 <li>
+//                     <button>
+//                          <p>Floraison</p>
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                   
+//                 </li>
+                
+//                 <li>
+//                     <button>
+//                         <p>Plantation</p>
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                    
+//                 </li>
+                
+//                 <li>
+//                     <button>
+//                         <p>Associations</p>
+//                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+//                     </button>
+                    
+//                 </li> */}
+                
+//             </ul>
+
+//         </div>
+//     )
+// };
