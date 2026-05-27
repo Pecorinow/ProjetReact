@@ -1,12 +1,25 @@
 import axios from 'axios';
+import qs from 'qs';
 
 export const plantService = {
 
     getAllPlants : async (filters) => {
 
-        const response = await axios.get('http://localhost:3000/api/plants', {params : filters});
-            // En méthode GET, on indique quels sont les paramètres à envoyer avec l'url (= les query params) comme ceci :
-            // {params : params-à-envoyer}
+        const response = await axios.get('http://localhost:3000/api/plants', {
+            params : filters,
+                // En méthode GET, on indique quels sont les paramètres à envoyer avec l'url (= les query params) comme ceci :
+                    // {params : params-à-envoyer}
+                // Ici, params reçoit filters depuis Explorer.jsx, qui le lui a passé avec plantService.getAllPlants(filters)
+            paramsSerializer: params => qs.stringify(params, {arrayFormat: 'repeat'})
+                // paramSerializer = option d'Axios qui permet de personnaliser comment les params sont convertis en chaîne URL => remplace le comportement par défaut d'Axios (qui veut transformer les params en "categories[]" ou "sol[]" dans l'URL) par une uatre fonction.
+                // qs = librairie Axios de "sérialisation" de query strings : converit des objets JS en paramètres URL.
+                    // Si on ne l'utilise pas, par défaut Axios va voir par exemple { categories: ['arbre', 'fleur'] } et va sérialiser le tableau categories dans l'URL comme ceci :
+                    // /plants?categories[]=arbre&categories[]=fleur
+                    // Or, nous on veut /plants?categories=arbre, sans les [] => on utilise qs pour dire à Axios comment écrire l'URL.
+                // stringify(params) = convertit l'objet params { categories: ["arbre", "fleur"] }, en string URL categories=arbre&categories=fleur.
+                // ArrayFormat: 'repeat' = "Répéter l'opératojn pour chaque tableau reçu".
+        });
+            
 
         return response.data;
     },

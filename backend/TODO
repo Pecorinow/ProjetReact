@@ -110,12 +110,12 @@ Front
 
 2.9 Filtres sur la liste
 
- ☐ Ajoute les filtres par catégorie
- ☐ Ajoute le filtre par sol
- ☐ Ajoute le filtre par mois de floraison
- ☐ Ajoute le filtre par niveau de toxicité
- ☐ Vérifie que combiner plusieurs filtres fonctionne
- ☐ Réfléchis à comment réinitialiser tous les filtres en un clic
+ ✔ Ajoute les filtres par catégorie @done(26-05-25 15:34)
+ ✔ Ajoute le filtre par sol @done(26-05-25 15:34)
+ ✔ Ajoute le filtre par mois de floraison @done(26-05-25 15:34)
+ ✔ Ajoute le filtre par niveau de toxicité @done(26-05-25 15:34)
+ ✔ Vérifie que combiner plusieurs filtres fonctionne @done(26-05-27 11:41)
+ ✔ Réfléchis à comment réinitialiser tous les filtres en un clic @done(26-05-27 11:41)
 
 2.10 Page détail d'une plante
 

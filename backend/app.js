@@ -25,16 +25,20 @@ server.use(cors());
 //? Connexion à la DB :
 const mongoose = require('mongoose');
 
-server.use(async (req, res, next) => {
-    try { 
-        await mongoose.connect(DB_CONNEXION, { dbName: 'GardenManager' });
-        console.log('Connecté à la DB ! U da best 🫶'); // Si la connexion fonctionne, la route de index.js devrait aussi renvoyer son message sur localhost:3000/api !
-        next();
-    } catch(err) {
-        console.log(`Connexion échouée : ${err}`);
-        res.status(500).json({ statusCode: 500, message: 'Impossible de se connecter à la DB 🙂‍↔️' });
-    }
-});
+// server.use(async (req, res, next) => {
+//     try { 
+//         await mongoose.connect(DB_CONNEXION, { dbName: 'GardenManager' });
+//         console.log('Connecté à la DB ! U da best 🫶'); // Si la connexion fonctionne, la route de index.js devrait aussi renvoyer son message sur localhost:3000/api !
+//         next();
+//     } catch(err) {
+//         console.log(`Connexion échouée : ${err}`);
+//         res.status(500).json({ statusCode: 500, message: 'Impossible de se connecter à la DB 🙂‍↔️' });
+//     }
+// });
+
+mongoose.connect(DB_CONNEXION, { dbName: 'GardenManager' })
+    .then(() => console.log('Connectée à la DB !  U da best 🫶'))
+    .catch((err) => console.log(`Connexion échouée : ${err}`));
 
 
 //! 2) Traiter les requêtes :
