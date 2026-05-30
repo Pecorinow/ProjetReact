@@ -1,11 +1,11 @@
 @font-face {
     font-family : 'AveriaLibreSerif-Regular';
-    src: url('/public/fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf');
+    src: url('/fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf');
 }
 
 @font-face {
     font-family : 'Anaheim-Regular';
-    src: url('/public/fonts/Anaheim/static/Anaheim-Regular.ttf');
+    src: url('/fonts/Anaheim/static/Anaheim-Regular.ttf');
 }
 
 @theme {

@@ -119,16 +119,16 @@ Front
 
 2.10 Page détail d'une plante
 
- ☐ Crée pages/PlantDetailPage.jsx
- ☐ Affiche toutes les infos de la plante
- ☐ Affiche la liste des plantes associées (noms cliquables vers leur propre page détail)
- ☐ Ajoute un bouton retour vers la liste
+ ✔ Crée pages/PlantDetailPage.jsx @done(26-05-29 17:24)
+ ✔ Affiche toutes les infos de la plante @done(26-05-29 17:24)
+ ✔ Affiche la liste des plantes associées (noms cliquables vers leur propre page détail) @done(26-05-30 14:45)
+ ✔ Ajoute un bouton retour vers la liste @done(26-05-30 14:45)
 
 2.11 Navigation
 
- ☐ Installe React Router
- ☐ Configure les routes /plants et /plants/:id
- ☐ Vérifie que la navigation fonctionne dans les deux sens
+ ✔ Installe React Router @done(26-05-30 14:45)
+ ✔ Configure les routes /plants et /plants/:id @done(26-05-30 14:45)
+ ✔ Vérifie que la navigation fonctionne dans les deux sens @done(26-05-30 14:45)
 
 
 🔐 PHASE 3 — Authentification
@@ -280,3 +280,5 @@ Front
  ☐ Ajoute des états de chargement partout où il y a un appel API
  ☐ Vérifie que l'app est utilisable sur mobile
  ☐ Vérifie les cas limites : jardin vide, aucune plante trouvée avec ces filtres, etc.
+
+ ☐ Régler le problème des underscores dans les valeurs de champs.
