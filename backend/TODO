@@ -135,69 +135,68 @@ Front
 Back
 3.1 Créer le modèle User
 
- ☐ Crée models/User.js
- ☐ Champs à prévoir : email, password, nom, created_at
+ ✔ Crée models/User.js @done(26-06-01 11:50)
+ ✔ Champs à prévoir : email, password, nom, created_at @done(26-06-01 11:50)
  ☐ Ajoute une validation (email unique, password longueur minimale...)
- ☐ Réfléchis : où hashe-t-on le mot de passe ? Dans le controller ou dans le modèle (middleware Mongoose pre save) ?
+ ✔ Réfléchis : où hashe-t-on le mot de passe ? Dans le controller ou dans le modèle (middleware Mongoose pre save) ? @done(26-06-03 15:28)
 
 3.2 Route Register
 
- ☐ Crée routes/authRoutes.js et controllers/authController.js
- ☐ Implémente POST /api/auth/register
- ☐ Vérifie que l'email n'existe pas déjà avant de créer l'utilisateur
- ☐ Hashe le mot de passe avant de sauvegarder
- ☐ Retourne un token JWT à la création
- ☐ Teste dans Insomnia — vérifie que le mot de passe stocké en base est bien hashé
+ ✔ Crée routes/authRoutes.js et controllers/authController.js @done(26-06-01 12:43)
+ ✔ Implémente POST /api/auth/register @done(26-06-01 12:44)
+ ✔ Vérifie que l'email n'existe pas déjà avant de créer l'utilisateur @done(26-06-01 12:43)
+ ✔ Crée auth.service.js. @done(26-06-01 15:36)
+ ✔ Hashe le mot de passe avant de sauvegarder @done(26-06-01 15:36)
+ ✔ Retourne un token JWT à la création @done(26-06-03 10:38)
+ ✔ Teste dans Insomnia — vérifie que le mot de passe stocké en base est bien hashé @done(26-06-03 10:38)
 
 3.3 Route Login
 
- ☐ Implémente POST /api/auth/login
- ☐ Vérifie que l'email existe
- ☐ Compare le mot de passe entré avec le hash en base (bcrypt)
- ☐ Retourne un token JWT si OK, une erreur générique si non (pourquoi générique ?)
- ☐ Teste dans Insomnia
+ ✔ Implémente POST /api/auth/login @done(26-06-03 10:38)
+ ✔ Vérifie que l'email existe @done(26-06-03 10:38)
+ ✔ Compare le mot de passe entré avec le hash en base. @done(26-06-03 10:38)
+ ✔ Retourne un token JWT si OK, une erreur générique si non (pourquoi générique ?) @done(26-06-03 10:38)
+ ✔ Teste dans Insomnia @done(26-06-03 10:38)
 
 3.4 Middleware d'authentification
 
- ☐ Crée middleware/protect.js
- ☐ Le middleware lit le token dans le header Authorization
- ☐ Il vérifie et décode le token
- ☐ Il attache l'utilisateur à req.user
- ☐ Il renvoie une 401 si le token est absent ou invalide
- ☐ Teste en appelant une route protégée avec et sans token dans Insomnia
+ ✔ Crée middleware/protect.js @done(26-06-03 10:38)
+ ✔ Le middleware lit le token dans le header Authorization @done(26-06-03 10:39)
+ ✔ Il vérifie et décode le token @done(26-06-03 10:39)
+ ✔ Il attache l'utilisateur à req.user @done(26-06-03 10:39)
+ ✔ Il renvoie une 401 si le token est absent ou invalide @done(26-06-03 10:39)
+ ✔ Teste en appelant une route protégée avec et sans token dans Insomnia @done(26-06-03 10:39)
 
 
 Front
 3.5 Pages auth
 
- ☐ Crée pages/RegisterPage.jsx avec un formulaire (nom, email, password)
- ☐ Crée pages/LoginPage.jsx avec un formulaire (email, password)
+ ✔ Crée pages/RegisterPage.jsx avec un formulaire (nom, email, password) @done(26-06-03 15:17)
+ ✔ Crée pages/LoginPage.jsx avec un formulaire (email, password) @done(26-06-03 15:17)
  ☐ Ajoute la validation côté front (champs vides, format email...)
  ☐ Affiche les erreurs retournées par l'API
 
 3.6 Service auth
 
- ☐ Crée services/authService.js
- ☐ Écris les fonctions register(data) et login(data)
- ☐ Gère le stockage du token après login/register — réfléchis au meilleur endroit
+ ✔ Crée services/authService.js @done(26-06-03 11:19)
+ ✔ Écris les fonctions register(data) et login(data) @done(26-06-03 11:19)
+ ✔ Gère le stockage du token après login/register — réfléchis au meilleur endroit (localStorage) @done(26-06-03 15:52)
 
 3.7 Contexte d'authentification
 
- ☐ Crée context/AuthContext.jsx
- ☐ Expose : l'utilisateur courant, une fonction login, une fonction logout, un booléen isAuthenticated
- ☐ Au chargement de l'app, vérifie si un token existe déjà et restaure la session
- ☐ Enveloppe toute l'app avec ce contexte dans main.jsx
+ ✔ atoms/auth.atom.js avec tokenAtom et isConnectAtom @done(26-06-03 15:53)
+
 
 3.8 Protection des routes front
 
- ☐ Crée un composant PrivateRoute.jsx
- ☐ Redirige vers /login si l'utilisateur n'est pas connecté
- ☐ Applique-le aux routes qui nécessitent d'être connecté (les jardins)
+ ✔ Crée un composant ProtectedPage.jsx @done(26-06-03 15:54)
+ ✔ Redirige vers /login si l'utilisateur n'est pas connecté @done(26-06-03 15:54)
+ ✔ Applique-le aux routes qui nécessitent d'être connecté (les jardins) @done(26-06-03 15:54)
 
 3.9 Navigation conditionnelle
 
- ☐ Affiche "Connexion / Inscription" si non connecté
- ☐ Affiche le nom de l'utilisateur + "Déconnexion" si connecté
+ ✔ Affiche "Connexion / Inscription" si non connecté @done(26-06-03 16:27)
+ ✔ Affiche le nom de l'utilisateur + "Déconnexion" si connecté @done(26-06-03 16:28)
  ☐ Le bouton "Ajouter à un jardin" n'est visible que si connecté
 
 
