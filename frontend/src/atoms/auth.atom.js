@@ -14,7 +14,7 @@ export const tokenAtom = atom(localStorage.getItem('token'));
 
  
 //Et on va rajouter ça  :
-//* un "atom dérivé", en passant une fonction au lieu d'une valeur, qui représente, non pas le token mais l'état de connexion (ici, non-null par défaut) :
+//* un "atom dérivé", en passant une fonction au lieu d'une valeur, qui représente, non pas le token mais l'état de connexion (ici, non-null par défaut) => Renvoie un Booléen true/connecté ou false/déconnecté :
 
 export const isConnectAtom = atom((get) => {
     // atom((get) = {...})  = atom qui passe une fonction => Jotai comprend que c'est un atom dérivé.

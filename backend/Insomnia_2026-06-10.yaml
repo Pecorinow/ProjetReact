@@ -1,0 +1,345 @@
+type: spec.insomnia.rest/5.0
+schema_version: "5.1"
+name: Plants_API
+meta:
+  id: wrk_561faf86c4f647318fb86952590dad10
+  created: 1776420759685
+  modified: 1776420759685
+  description: ""
+collection:
+  - name: Users
+    meta:
+      id: fld_584e428783d04ffbb193e3f0310c1530
+      created: 1776444127127
+      modified: 1776444162199
+      sortKey: -1776444144909
+      description: ""
+  - name: Gardens
+    meta:
+      id: fld_c62db6952aa5481aa1065a0f73f7f161
+      created: 1776444134386
+      modified: 1776444166763
+      sortKey: -1776444144859
+      description: ""
+    children:
+      - url: http://localhost:3000/api/gardens
+        name: GetAll
+        meta:
+          id: req_209a7c8e021e48d294a3d9e97d1074a3
+          created: 1780759644933
+          modified: 1780760110637
+          isPrivate: false
+          description: ""
+          sortKey: -1780759644933
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWVlODA4NzMxM2MxZWViZThhNmVhYyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTc4MDc2MDA4NSwiZXhwIjoxNzgxMDE5Mjg1LCJhdWQiOiJNb25nby1HYXJkZW5NYW5hZ2VyLUFwcCIsImlzcyI6Ik1vbmdvLUdhcmRlbk1hbmFnZXItQVBJIn0.15qB17sy7nqL1fWp-he5Xff9OvyjPL6sB_b6Mjew2ns
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/gardens
+        name: Insert
+        meta:
+          id: req_3442c99c49234461855637d6ad62e84c
+          created: 1780760612458
+          modified: 1780768123174
+          isPrivate: false
+          description: ""
+          sortKey: -1780759644833
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nom" : "Mon horrible terrasse"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWVlODA4NzMxM2MxZWViZThhNmVhYyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTc4MDc2MDA4NSwiZXhwIjoxNzgxMDE5Mjg1LCJhdWQiOiJNb25nby1HYXJkZW5NYW5hZ2VyLUFwcCIsImlzcyI6Ik1vbmdvLUdhcmRlbk1hbmFnZXItQVBJIn0.15qB17sy7nqL1fWp-he5Xff9OvyjPL6sB_b6Mjew2ns
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/gardens/6a244793ee92c06ce65bd221
+        name: Update
+        meta:
+          id: req_fb12ec31d3de4b5a9ae610e053190172
+          created: 1780762596379
+          modified: 1780762884505
+          isPrivate: false
+          description: ""
+          sortKey: -1780762596379
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nom" : "Ma ridicule terrasse"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWVlODA4NzMxM2MxZWViZThhNmVhYyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTc4MDc2MDA4NSwiZXhwIjoxNzgxMDE5Mjg1LCJhdWQiOiJNb25nby1HYXJkZW5NYW5hZ2VyLUFwcCIsImlzcyI6Ik1vbmdvLUdhcmRlbk1hbmFnZXItQVBJIn0.15qB17sy7nqL1fWp-he5Xff9OvyjPL6sB_b6Mjew2ns
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/gardens/6a244a30ee92c06ce65bd222
+        name: Delete
+        meta:
+          id: req_8e7f9bdedc724dee8bdb0ddf740ecc4e
+          created: 1780763221226
+          modified: 1780763293462
+          isPrivate: false
+          description: ""
+          sortKey: -1780763221226
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWVlODA4NzMxM2MxZWViZThhNmVhYyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTc4MDc2MDA4NSwiZXhwIjoxNzgxMDE5Mjg1LCJhdWQiOiJNb25nby1HYXJkZW5NYW5hZ2VyLUFwcCIsImlzcyI6Ik1vbmdvLUdhcmRlbk1hbmFnZXItQVBJIn0.15qB17sy7nqL1fWp-he5Xff9OvyjPL6sB_b6Mjew2ns
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/gardens/6a244793ee92c06ce65bd221/plants/6a16fa28b78b471a255010cf
+        name: InsertPlant
+        meta:
+          id: req_706eb1504bb24ce1bccdce801d8e7fac
+          created: 1780768193632
+          modified: 1780768493500
+          isPrivate: false
+          description: ""
+          sortKey: -1780768193632
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWVlODA4NzMxM2MxZWViZThhNmVhYyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTc4MDc2MDA4NSwiZXhwIjoxNzgxMDE5Mjg1LCJhdWQiOiJNb25nby1HYXJkZW5NYW5hZ2VyLUFwcCIsImlzcyI6Ik1vbmdvLUdhcmRlbk1hbmFnZXItQVBJIn0.15qB17sy7nqL1fWp-he5Xff9OvyjPL6sB_b6Mjew2ns
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/gardens/6a244793ee92c06ce65bd221/plants/6a16fa28b78b471a255010cf
+        name: RemovePlant
+        meta:
+          id: req_4b9cd94abcc847d194e0c8513eb8dc1b
+          created: 1780768572931
+          modified: 1780768626253
+          isPrivate: false
+          description: ""
+          sortKey: -1780768193732
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMWVlODA4NzMxM2MxZWViZThhNmVhYyIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTc4MDc2MDA4NSwiZXhwIjoxNzgxMDE5Mjg1LCJhdWQiOiJNb25nby1HYXJkZW5NYW5hZ2VyLUFwcCIsImlzcyI6Ik1vbmdvLUdhcmRlbk1hbmFnZXItQVBJIn0.15qB17sy7nqL1fWp-he5Xff9OvyjPL6sB_b6Mjew2ns
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Plants
+    meta:
+      id: fld_bb9cd97d5ea2449fb50501c753f13c78
+      created: 1776444144809
+      modified: 1776444144809
+      sortKey: -1776444144809
+      description: ""
+    children:
+      - url: http://localhost:3000/api/plants
+        name: GetAll
+        meta:
+          id: req_c1b69aef0eec432f9975c4883b687f1f
+          created: 1776445920532
+          modified: 1778512628162
+          isPrivate: false
+          description: ""
+          sortKey: -1776445920532
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/plants/69f8a89e3fbffb674f75fb71
+        name: GetById
+        meta:
+          id: req_a427681a36a642778709e63fc3d4ac1f
+          created: 1777910580487
+          modified: 1777910669550
+          isPrivate: false
+          description: ""
+          sortKey: -1776445920632
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Auth
+    meta:
+      id: fld_dc7ff7d86598471783f2c92666a9b320
+      created: 1776444176248
+      modified: 1776444176248
+      sortKey: -1776444176248
+      description: ""
+    children:
+      - url: http://localhost:3000/api/auth/register
+        name: Register
+        meta:
+          id: req_5a00ad9321bc4378b825547354d9b7fd
+          created: 1780401117969
+          modified: 1780410370245
+          isPrivate: false
+          description: ""
+          sortKey: -1780401117969
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "firstname": "Caroline",
+                "lastname": "Poveda",
+                "email": "c.poveda.fl@proton.me",
+                "password": "Pecorinow1!",
+            		"role" : "Admin"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/auth/login
+        name: Login
+        meta:
+          id: req_8f7f5fa36863405482f20292b742e36b
+          created: 1780410581639
+          modified: 1780411253530
+          isPrivate: false
+          description: ""
+          sortKey: -1780410581639
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email" : "c.poveda.fl@proton.me",
+            	"password" : "Pecorinow1!"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_6ea58b7e742fe32094f14a6df5bacbbbb6471bff
+    created: 1776420759697
+    modified: 1776420759697
+environments:
+  name: Base Environment
+  meta:
+    id: env_6ea58b7e742fe32094f14a6df5bacbbbb6471bff
+    created: 1776420759692
+    modified: 1776420759692
+    isPrivate: false
+spec:
+  meta:
+    id: spc_5eb3037c41d24e869c45595f6b535d43
+    created: 1776420759688
+    modified: 1777905810362

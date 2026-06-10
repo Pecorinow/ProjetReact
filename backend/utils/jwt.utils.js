@@ -19,8 +19,8 @@
             // Attention, pas d'infos sensibles !
             const playload = {
                 id : user._id,
-                role : user.role // Pour que le Front puisse faire on ne sait-quoi, peut-être des tartes ?🍰
-            }
+                role : user.role
+            } // ici, "id" et "role" sont des noms choisis par moi au moment de créer le playload.
 
             //* 2) Paramétrer les options pour créer notre token : = comment va être créé le token :
             const options = { // Tout ce qui est dans 'options' vient de la librairie jwt :

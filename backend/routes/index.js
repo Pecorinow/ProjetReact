@@ -2,6 +2,7 @@
 
 const plantRouter = require('./plant.router');
 const authRouter = require('./auth.router');
+const gardenRouter = require('./garden.router');
 
 // ! 1) Créer un objet "routeur" (router) 
 const router = require('express').Router();
@@ -13,6 +14,7 @@ router.get('/', (req, res) => {
 
 router.use('/plants', plantRouter);
 router.use('/auth', authRouter);
+router.use('/gardens', gardenRouter);
 
 //! 3) Rendre l'objet router exportable :
 module.exports = router;

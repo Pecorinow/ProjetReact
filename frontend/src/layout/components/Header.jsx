@@ -1,13 +1,16 @@
 import { NavLink } from "react-router";
 import { useAtom } from "jotai";
-import {tokenAtom} from '../../atoms/auth.atom';
+import {isConnectAtom} from '../../atoms/auth.atom';
+
 import { BtnLogout } from "../../features/auth/components/BtnLogout";
 
 export const Header = () => {
 
     //* Lire l'atom dans le Header :
-    const [token] = useAtom(tokenAtom);
-        // tokenAtom possède la valeur de l'atom, à savoir soit null, soit response.date.token.
+    const isConnected = useAtomValue(isConnectAtom);
+        // useAtomValue : lis juste la valeur de l'atom sans la modifier (car ici on veut juste lire l'atom).
+        // >< useAtom : qui renvoie [valeur, setter], donc la valeur de l'atom ET son setter pour pouvoir la modifier.
+        // >< useSetAtom : qui renvoie juste le setter (utilisé dans BtnLogout).
 
     return (
         <header className='flex flex-row justify-between py-4 px-8 bg-main-00'>
@@ -24,26 +27,29 @@ export const Header = () => {
                         <li>
                             <NavLink to="/plants">Explorer</NavLink>
                         </li>
-                        
-                        {!token &&
+
+                        {isConnected &&
+                            <li>
+                                <NavLink to="/gardens">Mes jardins</NavLink>
+                            </li>
+                        }
+                    </ul>
+
+                        {!isConnected &&
                         // Si pas de token stocké => afficher les boutons de connexion :
                         <>
-                            <li>
-                                <NavLink className="btn" to="/auth/login">Me Connecter</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="btn-2" to="/auth/register">Créer un compte</NavLink>
-                            </li>
+                            <NavLink className="btn" to="/auth/login">Me Connecter</NavLink>
+                            
+                            <NavLink className="btn-2" to="/auth/register">Créer un compte</NavLink>
                         </>
                     }
 
-                    
-                    {token &&
+                    {isConnected &&
                         // Si token stocké => bouton déconnexion :
                         <BtnLogout/> // Sous forme de composant pour ne faire le re-rendu que de ce composant-là.
                     }
 
-                    </ul>
+                    
                 </nav>
                 <button></button>
             </div>

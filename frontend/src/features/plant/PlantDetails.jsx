@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { plantService } from "../../services/plant.service";
 import { NavLink } from "react-router"
+import { useAtom, useAtomValue } from "jotai";
+import {isConnectAtom} from '../../atoms/auth.atom';
 
 const plantFields = [
         { key: 'categories', label: 'Catégorie', type: 'array' },
@@ -57,6 +59,12 @@ export const PlantDetails = () => {
 
     }, [id]);
 
+    //* Lire l'atom dans PlantDetails :
+    const isConnected = useAtomValue(isConnectAtom);
+        // useAtomValue : lis juste la valeur de l'atom sans la modifier (car ici on veut juste lire l'atom).
+        // >< useAtom : qui renvoie [valeur, setter], donc la valeur de l'atom ET son setter pour pouvoir la modifier.
+        // >< useSetAtom : qui renvoie juste le setter (utilisé dans BtnLogout).
+
     return (
         <>
 
@@ -67,12 +75,14 @@ export const PlantDetails = () => {
             </NavLink>
         </nav>
 
+
+
         { isLoading ? (
             <p>Chargement en cours...</p>
             ) :
 
             (plant !== null) ? (
-                <section className="flex flex-col">
+            <section className="flex flex-col">
                 <div className="flex flex-row">
                     <img src={plant.image}></img>
 
@@ -80,6 +90,13 @@ export const PlantDetails = () => {
                         <h1>{plant.nom_commun}</h1>
                         <h2>{plant.nom_latin}</h2>
                     </div>
+
+                    {isConnected &&
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"/></svg>
+                            <span>Ajouter à un jardin</span>
+                        </button>
+                    }
                 </div>
 
                 <ul className="flex flex-col">

@@ -57,7 +57,7 @@ const plantSchema = new Schema(
         },
 
         associations : [{type : Types.ObjectId,
-            ref: 'Plant',}]
+            ref: 'Plant'}]
     }
 );
 

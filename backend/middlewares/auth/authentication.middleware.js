@@ -1,9 +1,9 @@
 const {Request} = require('express');
 const jwtUtils = require('../../utils/jwt.utils')
-// Ce middleware vérifie si un toke a bien été fourni.
+//* Ce middleware vérifie si un token a bien été fourni.
 // Si oui, on continue la req.
 // pas de token, on arrête la req et on met un code erreur.
-// -> Resultat : il faut être connécté pour accéder à la ressource.
+//* -> Resultat : il faut être connécté pour accéder à la ressource.
 
 const authenticationMiddleware = () => {
     /**
@@ -16,9 +16,9 @@ const authenticationMiddleware = () => {
         const authorization = req.headers.authorization;
         console.log(authorization);
 
-        //* Si le token n'a pas été ajouté dans Authorization (sur Insomnia), le console.log renverra undefined -> On met fin à la requête : la personne n'est pas connecté :
+        //* Si le token n'a pas été ajouté dans Authorization (sur Insomnia), le console.log renverra undefined -> On met fin à la requête : la personne n'est pas connectée :
         if(!authorization){
-            res.status(401).json({statusCode : 401, message :'Vous devez être connecté'});
+            res.status(401).json({statusCode : 401, message :'Vous devez être connecté pour accéder à cette ressource.'});
         }
         //* Si qlq  a envoyé qlq-chose dans Authorization comme "Bearer", sans envoyer le token après "Bearer" -> fin de la requête :
         // authorization.split(' ') : permet de découper la chaine là où il y a un espace :
@@ -27,7 +27,7 @@ const authenticationMiddleware = () => {
         // Dans la deuxième [1] il y a le token
         const token = authorization.split(' ')[1];
         if(!token) {
-             res.status(401).json({statusCode : 401, message :'Vous devez être connecté'});
+             res.status(401).json({statusCode : 401, message :'Vous devez être connectépour accéder à cette ressource.'});
         }
 
         //* S'il y a bien un token : on le décode :
@@ -35,7 +35,7 @@ const authenticationMiddleware = () => {
             const playload = await jwtUtils.decode(token); // Le async est tout au-dessus, après le return.
 
             //* On stocke l'objet playload récupéré dans notre objet req, -> on peut savoir à tout moment dans la suite qui demande la request :
-            // Pour ajouter une info dans la requête, on prend juste l'obejt req et on lui ajoute une nouvelle propriété à l'arrache (oui on peut faire ça askip). Attention, ne pas prendre un nom déjà utilisé (query, body, url..;)
+            // Pour ajouter une info dans la requête, on prend juste l'obejt req et on lui ajoute une nouvelle propriété à l'arrache (oui on peut faire ça askip), ici appelée user pcq on y met des données du user. Attention, ne pas prendre un nom déjà utilisé (query, body, url..;)
             req.user = playload;
             
             // On continue la requête :
@@ -45,7 +45,7 @@ const authenticationMiddleware = () => {
             console.log(err);
             
             //* Si erreur, le décodage a planté, le token est erroné ou périmé => fin de la requête :
-            res.status(401).json({statusCode : 401, message :'Vous devez être connecté'});
+            res.status(401).json({statusCode : 401, message :'Vous devez être connecté pour accéder à cette ressource.'});
         }
     }
 }

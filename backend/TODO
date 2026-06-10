@@ -197,32 +197,32 @@ Front
 
  ✔ Affiche "Connexion / Inscription" si non connecté @done(26-06-03 16:27)
  ✔ Affiche le nom de l'utilisateur + "Déconnexion" si connecté @done(26-06-03 16:28)
- ☐ Le bouton "Ajouter à un jardin" n'est visible que si connecté
+ ✔ Le bouton "Ajouter à un jardin" n'est visible que si connecté @done(26-06-04 12:40)
 
 
 🌱 PHASE 4 — Les jardins
 Back
 4.1 Créer le modèle Garden
 
- ☐ Crée models/Garden.js
- ☐ Champs : nom, description, user_id (référence User), plantes (tableau de références Plant), created_at
+ ✔ Crée models/Garden.js @done(26-06-04 13:23)
+ ✔ Champs : nom, description, user_id (référence User), plantes (tableau de références Plant), created_at @done(26-06-04 13:23)
  ☐ Réfléchis à la validation nécessaire
 
 4.2 Routes CRUD jardins
 
- ☐ Crée routes/gardenRoutes.js et controllers/gardenController.js
- ☐ Applique le middleware protect à toutes ces routes
-    ☐ GET /api/gardens — retourne uniquement les jardins de l'utilisateur connecté
-    ☐ POST /api/gardens — crée un jardin lié à l'utilisateur connecté
-    ☐ PUT /api/gardens/:id — modifie un jardin (vérifie que l'utilisateur en est bien le propriétaire)
-    ☐ DELETE /api/gardens/:id — supprime un jardin (même vérification)
- ☐ Teste chaque route dans Insomnia avec et sans token
+ ✔ Crée routes/gardenRoutes.js et controllers/gardenController.js @done(26-06-05 15:50)
+ ✔ Applique le middleware protect à toutes ces routes @done(26-06-05 15:50)
+    ✔ GET /api/gardens — retourne uniquement les jardins de l'utilisateur connecté @done(26-06-05 15:50)
+    ✔ POST /api/gardens — crée un jardin lié à l'utilisateur connecté @done(26-06-05 15:50)
+    ✔ PUT /api/gardens/:id — modifie un jardin (vérifie que l'utilisateur en est bien le propriétaire) @done(26-06-05 15:50)
+    ✔ DELETE /api/gardens/:id — supprime un jardin (même vérification) @done(26-06-05 15:50)
+ ✔ Teste chaque route dans Insomnia avec et sans token @done(26-06-06 18:28)
 
 4.3 Routes gestion des plantes dans un jardin
 
- ☐ POST /api/gardens/:id/plants — ajoute une plante (évite les doublons !)
- ☐ DELETE /api/gardens/:id/plants/:plantId — retire une plante
- ☐ Teste dans Insomnia
+ ✔ POST /api/gardens/:id/plants — ajoute une plante (évite les doublons !) @done(26-06-06 19:58)
+ ✔ DELETE /api/gardens/:id/plants/:plantId — retire une plante @done(26-06-06 19:58)
+ ✔ Teste dans Insomnia @done(26-06-06 19:58)
 
 
 Front

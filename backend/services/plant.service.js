@@ -20,14 +20,14 @@ const plantService = {
                     //* Si query[field] est un tableau = Si il y a plusieurs cases cochées dans un des champs (ex : plusieurs catégories) :
                     if (Array.isArray(query[field])) {
                         // Ajouter à l'objet filter la propriété contenue dans field, si cette propriété correspond au contenu de field dans l'objet query :
-                        filter[field] = {$all : query[field]}
+                        filter[field] = { $all : query[field] }
                             // revient à faire filter.categories = { $in: query.categories }
                             // [field] est entre crochets car la variale field est ici utilisée comme une clé dynamique : si on l'écrit sans, il est interprété comme un objet litéral 'field'.
                     }
                     //* Si par contre query[field] n'est pas un tableau mais une string (= une seule case cochée pour ce champ) :
                     // alors il faut le transformer manuellement en tableau, car $all ne peut chercher que dans un tableau => query[field] devient [query[field]] :
                     else {
-                        filter[field] = {$all : [query[field]]}
+                        filter[field] = { $all : [query[field]] }
                     }
                 //  else {
                     // Pas de else, ici on n'écrit rien : si on ajoute un filter = {} ça va réinitialiser filter comme un objet vide, or on veut qu'il conserve les autres propriétés => On n'écrit pas de else !

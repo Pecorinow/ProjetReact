@@ -5,6 +5,11 @@ export const BtnLogout = () => {
 
     // Récupérer le setter de l'atom :
     const setToken = useSetAtom(tokenAtom);
+        // useSetAtom : renvoie juste le setter de l'atom pour mettre à jour sa valeur.
+        // >< useAtom : qui renvoie [valeur, setter], donc la valeur de l'atom ET son setter pour pouvoir la modifier.
+        // useAtomValue : lis juste la valeur de l'atom sans la modifier (utilisé dans Header et PlantDetails où on veut juste la lire).
+        
+        
 
     // Supprimer le token en cas de déconnexion => valeur null
     const handleLogOut = () => {
