@@ -2,8 +2,12 @@ import App from "./App";
 import { Home } from "./layout/pages/Home";
 import { Explore } from "./features/explorer/Explorer";
 import { PlantDetails } from "./features/plant/PlantDetails";
-import { Register } from './features/auth/pages/Register.jsx'
+import { Register } from './features/auth/pages/Register.jsx';
+import { Login} from './features/auth/pages/Login.jsx';
 import { ProtectedPage } from "./components/ProtectedPage.jsx";
+import { Gardens } from "./features/gardens/Gardens.jsx";
+// import { Garden } from "./features/garden/Garden.jsx";
+
 
 
 /**
@@ -32,17 +36,21 @@ export const routes = [
                 path:'gardens',
                 element : <ProtectedPage> <Gardens/> </ProtectedPage>
             },
+            // {
+            //     path: 'gardens/:id',
+            //     element : </Garden>
+            // },
             {
                 path: 'auth',
                 children : [
                     {
                         path: 'register',
                         element: <Register/>
+                    },
+                    {
+                        path: 'login',
+                        element: <Login/>
                     }
-                    // {
-                    //     path: 'login',
-                    //     element: <Login/>
-                    // }
                 ]
             }
         ]

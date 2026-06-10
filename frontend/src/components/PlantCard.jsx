@@ -16,16 +16,3 @@ export const PlantCard = (props) => {
         
     )
 }
-// <ul>
-//     {data.map(plant =>(
-//         <li key={plant._id} className=''>
-//             <img></img>
-//             <div>
-//                 <p>{plant.nom_latin}</p>
-//                 <p>{plant.nom_commun}</p>
-//             </div>
-//         </li>
-//     ))
-
-//     }
-// </ul>

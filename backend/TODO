@@ -228,10 +228,10 @@ Back
 Front
 4.4 Page liste des jardins
 
- ☐ Crée pages/GardensPage.jsx
- ☐ Affiche tous les jardins de l'utilisateur
+ ✔ Crée pages/GardensPage.jsx @done(26-06-10 12:01)
+ ✔ Affiche tous les jardins de l'utilisateur @done(26-06-10 12:01)
  ☐ Bouton "Créer un jardin"
- ☐ Bouton "Supprimer" sur chaque jardin (avec confirmation)
+ ✔ Bouton "Supprimer" sur chaque jardin (avec confirmation) @done(26-06-10 16:34)
 
 4.5 Création et édition d'un jardin
 
@@ -253,8 +253,8 @@ Front
 ☐ 
 4.8 Service jardins
 
- ☐ Crée services/gardenService.js avec toutes les fonctions nécessaires
- ☐ N'oublie pas d'envoyer le token dans les headers de chaque requête — réfléchis à comment centraliser ça plutôt que de le répéter partout
+ ✔ Crée services/gardenService.js avec toutes les fonctions nécessaires @done(26-06-10 16:41)
+ ✔ N'oublie pas d'envoyer le token dans les headers de chaque requête — réfléchis à comment centraliser ça plutôt que de le répéter partout @started(26-06-10 16:42) @done(26-06-10 16:42) @lasted(48s)
 
 
 ✨ PHASE 5 — Finitions

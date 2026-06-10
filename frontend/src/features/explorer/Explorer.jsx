@@ -17,12 +17,12 @@ export const Explore = () => {
     //* Initialiser un state pour savoir si le panneau des filtres est ouvert ou fermé :
     const [isFiltersOpen, setIsFiltersOpen] = useState(false);
 
-    //* Charger la liste des plantes via l'API (en passant par plantService) :
+    //* Charger la liste des jardins via l'API (en passant par gardenService) :
     useEffect( () => {
         // Restauration des valeurs par défaut :
             // (surtout utile si on n'avait pas un tableau vide [] au bout du useEffect, et qu'il fallait rétablir les valeurs de base après chaque déclenchement du useEffect)
         setIsLoading(true);
-        setPlants(null);
+        setGardens(null);
         setError(null);
 
         // Appel au plantService pour envoyer la requête, avec filters en paramètres :

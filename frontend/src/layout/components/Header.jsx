@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { useAtom } from "jotai";
+import { useAtomValue } from "jotai";
 import {isConnectAtom} from '../../atoms/auth.atom';
 
 import { BtnLogout } from "../../features/auth/components/BtnLogout";
