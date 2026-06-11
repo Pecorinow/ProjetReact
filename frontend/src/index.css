@@ -3,13 +3,17 @@
 @import "./theme.css";
 
 #root {
-    @apply font-anaheim min-h-screen flex flex-col;
+    @apply font-anaheim-m min-h-screen flex flex-col text-lg;
+}
+* {
+    @apply box-border
 }
 
 main {
-    @apply h-full grow p-4;
+    @apply h-full grow ;
 }
 
+/* Style Header */
 header {
 
     li {
@@ -24,6 +28,8 @@ header {
 
 .btn-1 {
     @apply
+    text-xl
+    font-averia-r
     bg-secondary-500
     text-secondary-00
     py-2
@@ -35,6 +41,8 @@ header {
 
 .btn-2 {
     @apply
+    text-xl
+    font-averia-r
     bg-main-500
     text-main-50
     py-2
@@ -46,14 +54,35 @@ header {
 
 .btn-3 {
     @apply
+    text-xl
+    font-averia-r
     bg-secondary-00
     text-secondary-500
     py-2
     px-4
     rounded-lg
     no-underline
-    outline-2
+    outline-3
     outline-secondary-500
     hover:bg-secondary-500
     hover:text-secondary-00
+    hover:fill-secondary-00
+}
+
+.panel {
+    @apply
+    fixed
+    top-90
+    right-0
+    w-700
+    overflow-y-auto
+    bg-main-00
+    outline-2
+    outline-main-100
+    p-40
+    translate-x-full
+    transition-transform
+    duration-300
+    ease-in-out
+    z-80
 }

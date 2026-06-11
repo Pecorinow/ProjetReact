@@ -1,5 +1,5 @@
 import App from "./App";
-import { Home } from "./layout/pages/Home";
+import { Home } from "./features//home/Home.jsx";
 import { Explore } from "./features/explorer/Explorer";
 import { PlantDetails } from "./features/plant/PlantDetails";
 import { Register } from './features/auth/pages/Register.jsx';

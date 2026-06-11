@@ -22,7 +22,7 @@ export const BtnLogout = () => {
 
     return (
         <li>
-            <button className="btn" onClick={handleLogOut}>Déconnexion</button>
+            <button className="btn-2" onClick={handleLogOut}>Déconnexion</button>
         </li>
     )
 }

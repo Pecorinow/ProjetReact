@@ -8,6 +8,16 @@
     src: url('/fonts/Anaheim/static/Anaheim-Regular.ttf');
 }
 
+@font-face {
+    font-family : 'Anaheim-Medium';
+    src: url('/fonts/Anaheim/static/Anaheim-Medium.ttf');
+}
+
+@font-face {
+    font-family : 'Anaheim-Bold';
+    src: url('/fonts/Anaheim/static/Anaheim-Bold.ttf');
+}
+
 @theme {
     /* main colors */
     --color-main-00: #FBFEF7;
@@ -43,5 +53,7 @@
 
     /* fonts */
     --font-averia-r : 'AveriaLibreSerif-Regular';
-    --font-anaheim : 'Anaheim-Regular';
+    --font-anaheim-r : 'Anaheim-Regular';
+    --font-anaheim-m : 'Anaheim-Medium';
+    --font-anaheim-b : 'Anaheim-Bold';
 }

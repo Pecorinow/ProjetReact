@@ -13,46 +13,51 @@ export const Header = () => {
         // >< useSetAtom : qui renvoie juste le setter (utilisé dans BtnLogout).
 
     return (
-        <header className='flex flex-row justify-between py-4 px-8 bg-main-00'>
-            <div>
-                <img className="w-10" src="/images/logo.png" alt="Logo du site - Fleur bleue"></img>
-                <p className='font-averia-r text-main-600 text-2xl'>Garden <span className='text-secondary-500'>Pal</span></p>
+        <header className="flex flex-row justify-between py-4 px-8 w-9/10 m-auto rounded-2xl bg-main-00 outline-main-100 outline-3 fixed top-6 right-0.5 left-0.5 z-100">
+            <div  className="flex items-center gap-2">
+                <img className="w-12" src="/images/logo.png" alt="Logo du site - Fleur bleue"></img>
+                <p className='font-averia-r text-main-600 text-3xl'>Garden <span className='text-secondary-500'>Pal</span></p>
             </div>
-            <div>
-                <nav className='flex items-center'>
-                    <ul className='flex flex-row justify-between gap-4'>
-                        <li>
-                            <NavLink to="">Accueil</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/plants">Explorer</NavLink>
-                        </li>
 
-                        {isConnected &&
-                            <li>
-                                <NavLink to="/gardens">Mes jardins</NavLink>
-                            </li>
-                        }
-                    </ul>
+            <nav className='flex items-center'>
+                <ul className='flex items-center justify-between gap-8 font-averia-r text-xl'>
+                    <li>
+                        <NavLink to="">Accueil</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/plants">Explorer</NavLink>
+                    </li>
 
-                        {!isConnected &&
+                    {isConnected &&
+                        <li>
+                            <NavLink to="/gardens">Mes jardins</NavLink>
+                        </li>
+                    }
+
+                    {!isConnected &&
                         // Si pas de token stocké => afficher les boutons de connexion :
                         <>
-                            <NavLink className="btn" to="/auth/login">Me Connecter</NavLink>
-                            
-                            <NavLink className="btn-2" to="/auth/register">Créer un compte</NavLink>
+                            <li>
+                                <NavLink className="btn-1" to="/auth/login">Me Connecter</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className="btn-2" to="/auth/register">Créer un compte</NavLink>
+                            </li>
                         </>
                     }
 
                     {isConnected &&
                         // Si token stocké => bouton déconnexion :
-                        <BtnLogout/> // Sous forme de composant pour ne faire le re-rendu que de ce composant-là.
+                        <BtnLogout /> // Sous forme de composant pour ne faire le re-rendu que de ce composant-là.
                     }
+                </ul>
 
                     
-                </nav>
-                <button></button>
-            </div>
+
+                
+
+                
+            </nav>
         </header>
     )
 }
